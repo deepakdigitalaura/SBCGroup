@@ -34,7 +34,7 @@ const reports: Report[] = [
     description:
       "A research-based assessment of six operational gap domains -- HR, finance, operations, sales, technology and governance -- across Gujarat's key MSME industrial clusters, based on 17 verified secondary sources.",
     date: "May 2026",
-    href: "https://sbcgroup.in/wp-content/uploads/2026/08/Operational-Gaps-in-Gujarat-MSMEs-SBC-Research-1.pdf",
+    href: "/uploads/reports/Operational-Gaps-in-Gujarat-MSMEs-SBC-Research.pdf",
   },
   {
     category: "Business Intelligence & Market Insights",
@@ -42,7 +42,7 @@ const reports: Report[] = [
     description:
       "A strategic assessment of India's Global Capability Centre boom, the Gujarat and Ahmedabad Tier-2 opportunity, and the leadership and talent gaps constraining GCC readiness.",
     date: "June 2026",
-    href: "https://sbcgroup.in/wp-content/uploads/2026/08/GCC-India-2026-SBC-Report-1.pdf",
+    href: "/uploads/reports/GCC-India-2026-SBC-Report.pdf",
   },
 ];
 
