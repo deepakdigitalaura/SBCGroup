@@ -1,0 +1,37 @@
+RewriteEngine On
+
+# /blog/some-slug -> blog-some-slug.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([^/]+)/?$ blog-$1.php [L]
+
+# /case-studies/some-slug -> case-studies-some-slug.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^case-studies/([^/]+)/?$ case-studies-$1.php [L]
+
+# /page -> page.php (clean URLs for all top-level routes)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Anything left (no matching file/dir) — route through 404.php so seo-inject.php
+# still gets a chance to apply a configured redirect before falling back to a real 404.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ 404.php [L]
+
+DirectoryIndex index.php
+php_value auto_prepend_file seo-inject.php
+ErrorDocument 404 /404.php
+
+<FilesMatch "^(config\.php|smtp-mailer\.php|seo-inject\.php)$">
+    Require all denied
+</FilesMatch>
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^(config\.php|smtp-mailer\.php|seo-inject\.php)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>

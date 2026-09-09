@@ -1,0 +1,6 @@
+/* ponytail: tiny stylesheet for the handful of utility classes the exported
+   Tailwind bundle purged because the original React app never used them. */
+.sbc-text-success{color:#15803d}
+.sbc-text-error{color:#b91c1c}
+.sbc-scroll-x{overflow-x:auto}
+.sbc-align-top{vertical-align:top}

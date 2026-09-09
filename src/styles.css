@@ -1,0 +1,350 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SBC design system.
+ * Brand: ink navy #0F3A48, olive-gold #8D7830, paper #FAF8F4, charcoal #1A1A1A.
+ * All colors are oklch tokens; never hardcode hex in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-display: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-tint: var(--ink-tint);
+  --color-ink-wash: var(--ink-wash);
+  --color-gold: var(--gold);
+  --color-gold-tint: var(--gold-tint);
+  --color-gold-wash: var(--gold-wash);
+  --color-gold-deep: var(--gold-deep);
+  --color-paper: var(--paper);
+  --color-charcoal: var(--charcoal);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.25rem;
+
+  --ink: oklch(0.3263 0.052 223.71);
+  --ink-soft: oklch(0.395 0.045 223.71);
+  --ink-tint: oklch(0.885 0.012 223.71);
+  --ink-wash: oklch(0.962 0.008 223.71);
+  --gold: oklch(0.505 0.0945 92.89);
+  --gold-tint: oklch(0.68 0.085 92.89);
+  --gold-wash: oklch(0.955 0.022 92.89);
+  --gold-deep: oklch(0.365 0.075 92.89);
+  --paper: oklch(0.9796 0.0057 84.57);
+  --charcoal: oklch(0.2178 0 89.88);
+
+  --background: var(--paper);
+  --foreground: var(--charcoal);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--charcoal);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--charcoal);
+  --primary: var(--gold);
+  --primary-foreground: oklch(0.995 0.003 84.57);
+  --secondary: var(--ink-wash);
+  --secondary-foreground: var(--ink);
+  --muted: var(--ink-wash);
+  --muted-foreground: oklch(0.52 0.02 223.71);
+  --accent: var(--gold-wash);
+  --accent-foreground: var(--ink);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: var(--ink-tint);
+  --input: var(--ink-tint);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@utility shell {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-inline: 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility section-y {
+  padding-block: 3.5rem;
+
+  @media (min-width: 768px) {
+    padding-block: 4.5rem;
+  }
+}
+
+@utility animate-float {
+  animation: sbc-float 6s ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+/* Hero orbit system — layered, independent rotate/scale/translate so entrance,
+   spin and pulse animations can run on the same elements without clobbering
+   each other's transforms. */
+@utility orbit-rotate-slow {
+  animation: sbc-spin 34s linear infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility orbit-rotate-rev {
+  animation: sbc-spin-reverse 20s linear infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility orbit-rotate-icons {
+  animation: sbc-spin 24s linear infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility orbit-rotate-icons-rev {
+  animation: sbc-spin-reverse 24s linear infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility animate-icon-bob {
+  animation: sbc-icon-bob 4.5s ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility animate-breathe {
+  animation: sbc-breathe 3.6s ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@utility animate-ring-burst {
+  animation: sbc-ring-burst 1.8s ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+@keyframes sbc-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sbc-spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes sbc-spin-reverse {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: -360deg;
+  }
+}
+
+@keyframes sbc-icon-bob {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -4px;
+  }
+}
+
+@keyframes sbc-breathe {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.035;
+  }
+}
+
+@keyframes sbc-ring-burst {
+  0% {
+    scale: 0.9;
+    opacity: 0.6;
+  }
+  100% {
+    scale: 1.7;
+    opacity: 0;
+  }
+}
+
+.orbit-icon {
+  transition:
+    scale 450ms ease,
+    box-shadow 450ms ease,
+    background-color 450ms ease;
+}
+
+.orbit-icon.is-active {
+  scale: 1.16;
+  background-color: var(--gold-wash);
+  box-shadow:
+    0 0 0 4px var(--gold-wash),
+    0 0 18px 2px oklch(0.505 0.0945 92.89 / 45%);
+}
+
+.orbit-label {
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+
+.orbit-label.is-active {
+  opacity: 1;
+}
+
+/* Hero graphic entrance sequence */
+.hero-graphic-in > * {
+  opacity: 0;
+}
+
+.hero-graphic-in[data-visible="true"] .g-ring-outer {
+  animation: sbc-fade-scale-in 700ms ease forwards 0ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-ring-mid {
+  animation: sbc-fade-scale-in 700ms ease forwards 140ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-icon-layer {
+  opacity: 1;
+}
+
+.hero-graphic-in[data-visible="true"] .g-icon-0 .orbit-icon {
+  animation: sbc-fade-scale-in 500ms ease forwards 480ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-icon-1 .orbit-icon {
+  animation: sbc-fade-scale-in 500ms ease forwards 620ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-icon-2 .orbit-icon {
+  animation: sbc-fade-scale-in 500ms ease forwards 760ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-icon-3 .orbit-icon {
+  animation: sbc-fade-scale-in 500ms ease forwards 900ms;
+}
+
+.hero-graphic-in[data-visible="true"] .g-center {
+  animation: sbc-fade-scale-in 600ms ease forwards 1150ms;
+}
+
+@keyframes sbc-fade-scale-in {
+  from {
+    opacity: 0;
+    scale: 0.85;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-graphic-in > * {
+    opacity: 1;
+    animation: none !important;
+    scale: 1 !important;
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+
+  &[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
