@@ -86,7 +86,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Sagar Burse Consulting" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://sbcgroup.in/sbc-logo.png" },
+      { property: "og:site_name", content: "Sagar Burse Consulting (SBC)" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [
       {

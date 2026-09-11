@@ -33,6 +33,12 @@ export const Route = createFileRoute("/institution-building-skill-development")(
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://sbcgroup.in/institution-building-skill-development" },
+      { property: "og:image", content: "https://sbcgroup.in/sbc-logo.png" },
+      { property: "og:site_name", content: "Sagar Burse Consulting (SBC)" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [
       {

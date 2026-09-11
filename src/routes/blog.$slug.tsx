@@ -27,6 +27,12 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:url", content: `https://sbcgroup.in/blog/${loaderData?.slug ?? ""}` },
+        { property: "og:image", content: "https://sbcgroup.in/sbc-logo.png" },
+        { property: "og:site_name", content: "Sagar Burse Consulting (SBC)" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+        { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
       ],
       links: loaderData
         ? [{ rel: "canonical", href: `https://sbcgroup.in/blog/${loaderData.slug}` }]
