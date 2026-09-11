@@ -21,7 +21,7 @@ import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 
 const title = "About SBC | Sagar Burse Consulting, Ahmedabad";
 const description =
-  "SBC is a multi-division advisory firm built on one principle — real implementation, not just advice. Learn our story, mission, vision and values.";
+  "SBC is one of the management consulting firms in Ahmedabad, built on one principle — real implementation, not just advice. Our story, mission and values.";
 
 export const Route = createFileRoute("/about-sbc")({
   head: () => ({
@@ -33,6 +33,7 @@ export const Route = createFileRoute("/about-sbc")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/about-sbc" }],
   }),
   component: AboutSBC,
 });

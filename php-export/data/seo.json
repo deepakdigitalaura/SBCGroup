@@ -1,0 +1,11 @@
+{
+  "site_url": "https://sbcgroup.in",
+  "title_suffix": "",
+  "meta_description": "",
+  "pages": [],
+  "redirects": [
+    { "from": "/our-expertise", "to": "/msme-consulting", "type": 301 },
+    { "from": "/case-studies/wift-formwork-institute", "to": "/case-studies/winntus-institute-formwork-technology", "type": 301 }
+  ],
+  "head_tags": ""
+}

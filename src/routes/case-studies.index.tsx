@@ -23,6 +23,7 @@ export const Route = createFileRoute("/case-studies/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/case-studies" }],
   }),
   component: CaseStudies,
 });

@@ -9,7 +9,7 @@ import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 
 const title = "Our Approach | Sagar Burse Consulting";
 const description =
-  "How SBC works with clients: not just advice, real implementation. Explore our philosophy, engagement models and what sets us apart.";
+  "How SBC delivers business consulting services: not just advice, real implementation. Our philosophy, engagement models and what sets us apart.";
 
 export const Route = createFileRoute("/our-approach")({
   head: () => ({
@@ -21,6 +21,7 @@ export const Route = createFileRoute("/our-approach")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/our-approach" }],
   }),
   component: OurApproach,
 });
@@ -179,7 +180,7 @@ function OurApproach() {
                   guidance.
                 </p>
               </div>
-              <GoldLink href="#book">Book Free Audit &rarr;</GoldLink>
+              <GoldLink href="/book-free-audit">Book Free Audit &rarr;</GoldLink>
             </Reveal>
           </div>
         </section>

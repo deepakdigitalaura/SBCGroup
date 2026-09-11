@@ -23,7 +23,7 @@ import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 
 const title = "GAP360™ — Growth Acceleration Pathway 360° | SBC";
 const description =
-  "GAP360™ is SBC's flagship diagnostic and implementation framework — mapping businesses across Operations, Systems, People, Process and Strategy to deliver measurable results.";
+  "GAP360™ is SBC's flagship gap analysis consulting framework — mapping Operations, Systems, People, Process and Strategy to deliver measurable results.";
 
 export const Route = createFileRoute("/gap360")({
   head: () => ({
@@ -35,6 +35,7 @@ export const Route = createFileRoute("/gap360")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/gap360" }],
   }),
   component: Gap360,
 });
@@ -186,7 +187,7 @@ function Gap360() {
                 Most diagnostic frameworks stop at recommendations. GAP360&trade; goes further —
                 it is designed from the ground up for implementation, not just diagnosis. The
                 methodology was developed by Dr. Sagar Burse through years of on-ground consulting
-                with Indian MSMEs. It maps businesses across six critical dimensions —
+                with Indian MSMEs. It maps businesses across five critical dimensions —
                 Operations, Systems, People, Process and Strategy — identifying exact gaps that
                 cost money, time and growth. The output is not a report that sits in a drawer. It
                 is a prioritised implementation roadmap — with SBC staying alongside your team

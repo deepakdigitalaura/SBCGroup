@@ -1,12 +1,25 @@
 import { ChevronRight } from "lucide-react";
+import { JsonLd } from "./JsonLd";
 
 export type Crumb = { label: string; href?: string };
 
 export function Breadcrumbs({ trail, dark = false }: { trail: Crumb[]; dark?: boolean }) {
   const items: Crumb[] = [{ label: "Home", href: "/" }, ...trail];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.label,
+      ...(item.href ? { item: `https://sbcgroup.in${item.href}` } : {}),
+    })),
+  };
+
   return (
     <div className={dark ? "bg-ink" : undefined}>
+      <JsonLd data={breadcrumbSchema} />
       <nav
         aria-label="Breadcrumb"
         className={`shell py-3 ${dark ? "text-paper/70" : "text-ink-soft"} flex flex-wrap items-center gap-1.5 text-[13px]`}
