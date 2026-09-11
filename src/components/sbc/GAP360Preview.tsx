@@ -47,8 +47,8 @@ export function GAP360Preview() {
             GAP360&trade; — Growth Acceleration Pathway 360&deg;
           </h2>
           <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-            A structured diagnostic that maps your business across 5 phases — identifying gaps and
-            delivering end-to-end implementation solutions.
+            A structured business growth consulting diagnostic — identifying issues and delivering
+            end-to-end implementation solutions.
           </p>
         </Reveal>
 

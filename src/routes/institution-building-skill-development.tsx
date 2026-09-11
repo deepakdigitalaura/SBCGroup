@@ -18,10 +18,11 @@ import { StatCard } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 const title = "Institution Building & Skill Development | SBC, Ahmedabad";
 const description =
-  "End-to-end advisory for universities, skill centres and educational institutions — from vision to launch, navigating AICTE, UGC, NSDC, SSC and state regulatory bodies.";
+  "End-to-end advisory for universities and skill centres — from vision to launch, navigating AICTE, UGC, NSDC, SSC and state regulatory bodies.";
 
 export const Route = createFileRoute("/institution-building-skill-development")({
   head: () => ({
@@ -32,6 +33,12 @@ export const Route = createFileRoute("/institution-building-skill-development")(
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://sbcgroup.in/institution-building-skill-development",
+      },
     ],
   }),
   component: InstitutionBuilding,
@@ -137,9 +144,19 @@ const engagements = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Institution Building & Skill Development",
+  provider: { "@type": "Organization", name: "Sagar Burse Consulting" },
+  areaServed: { "@type": "Country", name: "India" },
+  description,
+};
+
 function InstitutionBuilding() {
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={serviceSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Our Expertise" }, { label: "Institution Building & Skill Development" }]} dark />
       <main>

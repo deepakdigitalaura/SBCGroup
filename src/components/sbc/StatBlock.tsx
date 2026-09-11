@@ -4,7 +4,7 @@ const NUMBER_RE = /\d[\d,]*/;
 
 function useCountUp(value: string, active: boolean) {
   const match = value.match(NUMBER_RE);
-  const [display, setDisplay] = useState(match ? value.replace(NUMBER_RE, "0") : value);
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!active || !match) return;

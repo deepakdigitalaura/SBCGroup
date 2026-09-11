@@ -124,7 +124,7 @@ export const posts: BlogPost[] = [
     slug: "why-msmes-stay-stuck-systems-gap",
     title: "Why Most MSMEs Stay Stuck — The Systems Gap Explained",
     excerpt:
-      "Most MSME founders across India turn to MSME consulting expecting strategy — but the real problem runs deeper than strategy. They are stuck because their business runs on people, not systems.",
+      "Most MSME founders across India turn to consultants expecting strategy — but the real problem runs deeper than strategy. They are stuck because their business runs on people, not systems.",
     metaDescription:
       "Most Indian MSMEs stay stuck not because of strategy but because of missing systems. SBC's MSME consulting closes the systems gap. Book a free audit today.",
     author: "Dr. Sagar Burse",
@@ -133,9 +133,9 @@ export const posts: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Most MSME founders across India turn to MSME consulting expecting strategy — but the real problem runs deeper than strategy. They are stuck because their business runs on people, not systems. This is the systems gap — and closing it is what SBC's MSME consulting practice is built to do.",
+        text: "Most MSME founders across India turn to consultants expecting strategy — but the real problem runs deeper than strategy. They are stuck because their business runs on people, not systems. This is the systems gap — and closing it is what SBC's MSME consulting practice is built to do.",
       },
-      { type: "h2", text: "What Is the Systems Gap in MSME Consulting?" },
+      { type: "h2", text: "What Is the Systems Gap?" },
       {
         type: "p",
         text: "The systems gap is the difference between what your business could achieve and what it actually delivers — caused entirely by the absence of documented processes, clear accountability structures and consistent reporting.",
@@ -153,9 +153,9 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Sound familiar? This is the reality for the majority of India's 6.5 crore MSMEs. Good MSME consulting does not add more strategy on top of this — it fixes the foundation first.",
+        text: "Sound familiar? This is the reality for the majority of India's 6.5 crore MSMEs. A good consultant does not add more strategy on top of this — the foundation gets fixed first.",
       },
-      { type: "h2", text: "The Founder Trap — The Real MSME Consulting Challenge" },
+      { type: "h2", text: "The Founder Trap — Why Growth Stalls" },
       {
         type: "p",
         text: "When a business starts, the founder doing everything makes sense. There are no resources, no team, no budget. The founder's involvement is what keeps the business alive.",
@@ -166,7 +166,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "This is what we call the Founder Trap — and it is the most common reason Indian MSMEs plateau between ₹2 crore and ₹15 crore in revenue and never break through. Effective MSME consulting starts by identifying and dismantling this trap.",
+        text: "This is what we call the Founder Trap — and it is the most common reason Indian MSMEs plateau between ₹2 crore and ₹15 crore in revenue and never break through. Real progress starts by identifying and dismantling this trap.",
       },
       { type: "h2", text: "Why Strategy Alone Does Not Work" },
       {
@@ -179,17 +179,17 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The real MSME consulting intervention is not strategic. It is operational. It is building the systems that allow the business to execute strategy consistently, without the founder being present at every step.",
+        text: "The real intervention is not strategic. It is operational. It is building the systems that allow the business to execute strategy consistently, without the founder being present at every step.",
       },
       { type: "h2", text: "The Four Systems Every MSME Needs" },
       {
         type: "p",
-        text: "Based on SBC's MSME consulting work with founders across Gujarat and India through the GAP360™ framework, we have identified four core systems that separate growing businesses from stuck ones:",
+        text: "Based on SBC's work with founders across Gujarat and India through the GAP360™ framework, we have identified four core systems that separate growing businesses from stuck ones:",
       },
       { type: "h3", text: "1. Process Documentation" },
       {
         type: "p",
-        text: "Every repeatable activity in your business — production, sales, hiring, customer service — needs a written Standard Operating Procedure. Without documentation, every person does things differently and quality becomes inconsistent. This is the first thing SBC's MSME consulting practice addresses.",
+        text: "Every repeatable activity in your business — production, sales, hiring, customer service — needs a written Standard Operating Procedure. Without documentation, every person does things differently and quality becomes inconsistent. This is the first thing SBC addresses.",
       },
       { type: "h3", text: "2. Accountability Framework" },
       {
@@ -206,10 +206,10 @@ export const posts: BlogPost[] = [
         type: "p",
         text: "Systems only work if they are reviewed. A weekly operations review, monthly performance review and quarterly strategic review — each with a fixed agenda, fixed attendees and documented actions — ensures the systems are being followed and course corrections happen fast.",
       },
-      { type: "h2", text: "Real Results From MSME Consulting in Action" },
+      { type: "h2", text: "Real Results From Closing the Systems Gap" },
       {
         type: "p",
-        text: "The results of closing the systems gap through structured MSME consulting are not theoretical. Here is what SBC has delivered for real clients:",
+        text: "The results of closing the systems gap through structured implementation are not theoretical. Here is what SBC has delivered for real clients:",
       },
       {
         type: "stats",
@@ -221,26 +221,26 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "None of these required new products, new markets or new capital. They required systems — and structured MSME consulting to implement them.",
+        text: "None of these required new products, new markets or new capital. They required systems — and structured implementation to put them in place.",
       },
-      { type: "h2", text: "How SBC's MSME Consulting Closes the Systems Gap" },
+      { type: "h2", text: "How SBC Closes the Systems Gap" },
       {
         type: "p",
-        text: "SBC uses the GAP360™ framework — a structured 5-phase diagnostic and implementation methodology — to identify exactly where your systems gap is and close it with hands-on implementation support.",
-      },
-      {
-        type: "p",
-        text: "Unlike traditional consulting, SBC's MSME consulting does not end with a report. We stay with you through implementation until measurable results are achieved.",
+        text: "SBC uses the GAP360™ framework — a structured 6-phase diagnostic and implementation methodology — to identify exactly where your systems gap is and close it with hands-on implementation support.",
       },
       {
         type: "p",
-        text: "SBC's MSME consulting starts with a complimentary 45-minute business audit — where we map your business, identify the 2-3 most critical gaps and give you a clear action plan at no cost and no obligation.",
+        text: "Unlike traditional consulting, this does not end with a report. We stay with you through implementation until measurable results are achieved.",
+      },
+      {
+        type: "p",
+        text: "It starts with a complimentary 45-minute business audit — where we map your business, identify the 2-3 most critical gaps and give you a clear action plan at no cost and no obligation.",
       },
       {
         type: "p",
         text: "If you are an MSME founder who feels stuck, overwhelmed or unable to step back from daily operations — the systems gap is almost certainly the reason. And it is entirely fixable.",
       },
-      { type: "cta", text: "Book your free 45-minute MSME consulting audit and find out exactly where your business is losing money and momentum." },
+      { type: "cta", text: "Book your free 45-minute business audit and find out exactly where your business is losing money and momentum." },
     ],
   },
 ];

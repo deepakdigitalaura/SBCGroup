@@ -19,6 +19,7 @@ import { StatCard } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 const title = "Strategic Research & Feasibility Studies | SBC, Ahmedabad";
 const description =
@@ -33,6 +34,9 @@ export const Route = createFileRoute("/strategic-research-feasibility")({
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://sbcgroup.in/strategic-research-feasibility" },
     ],
   }),
   component: StrategicResearch,
@@ -118,9 +122,19 @@ const process = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Strategic Research & Feasibility",
+  provider: { "@type": "Organization", name: "Sagar Burse Consulting" },
+  areaServed: { "@type": "Country", name: "India" },
+  description,
+};
+
 function StrategicResearch() {
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={serviceSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Our Expertise" }, { label: "Strategic Research & Feasibility" }]} dark />
       <main>

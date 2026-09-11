@@ -7,7 +7,11 @@ $base = rtrim($seo['site_url'] ?: '', '/');
 
 $sitePages = ['/', '/about-sbc', '/msme-consulting', '/institution-building-skill-development',
     '/strategic-research-feasibility', '/policy-advisory', '/gap360', '/case-studies', '/blog',
-    '/resources', '/contact', '/book-free-audit', '/founder', '/our-approach', '/privacy-policy'];
+    '/resources', '/contact', '/book-free-audit', '/founder', '/our-approach', '/privacy-policy',
+    '/case-studies/rubber-plastics-manufacturer', '/case-studies/industrial-components-manufacturer',
+    '/case-studies/trading-distribution-business', '/case-studies/winntus-institute-formwork-technology',
+    '/case-studies/finance-operations-services-venture', '/case-studies/specialty-cafe-green-coffee-venture',
+    '/blog/5-business-systems-msme-scaling', '/blog/why-msmes-stay-stuck-systems-gap'];
 
 $noindex = array_keys(array_filter($seo['pages'] ?? [], fn($p) => !empty($p['noindex'])));
 $entries = array_diff($sitePages, $noindex);

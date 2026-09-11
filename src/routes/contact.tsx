@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 
 const title = "Contact | Sagar Burse Consulting";
 const description =
-  "Get in touch with Sagar Burse Consulting — MSME consulting, institution building and policy advisory based in Ahmedabad, Gujarat.";
+  "Contact Sagar Burse Consulting, a business consultant in Ahmedabad — for MSME consulting, institution building and policy advisory across Gujarat.";
 
 const labelClass = "font-medium text-[12px] uppercase tracking-[0.14em] text-ink-soft";
 const inputClass =
@@ -23,6 +23,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/contact" }],
   }),
   component: Contact,
 });
@@ -69,7 +70,6 @@ function Contact() {
                   <div>
                     <p className={labelClass}>Email</p>
                     <p className="mt-1 text-[16px] text-charcoal">consulting@sbcgroup.in</p>
-                    <p className="text-[16px] text-charcoal">sagar@sbcgroup.in</p>
                   </div>
                 </div>
                 <div className="flex gap-4 border border-ink-tint bg-card p-5">

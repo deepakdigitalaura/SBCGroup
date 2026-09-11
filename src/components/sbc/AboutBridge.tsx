@@ -41,7 +41,7 @@ export function AboutBridge() {
             SBC bridges all four.
           </p>
           <div className="mt-4">
-            <GoldLink>About SBC &rarr;</GoldLink>
+            <GoldLink href="/about-sbc">About SBC &rarr;</GoldLink>
           </div>
         </Reveal>
       </div>

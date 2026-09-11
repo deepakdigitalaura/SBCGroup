@@ -21,10 +21,11 @@ import { StatBlock } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 const title = "MSME Consulting & Business Advisory | SBC, Ahmedabad";
 const description =
-  "SBC helps Indian MSMEs build systems, create accountability and grow on autopilot through GAP360™ — structured diagnosis, design and hands-on implementation.";
+  "SBC's MSME consulting helps Indian businesses build systems, create accountability and grow on autopilot through GAP360™ diagnosis and implementation.";
 
 export const Route = createFileRoute("/msme-consulting")({
   head: () => ({
@@ -36,6 +37,7 @@ export const Route = createFileRoute("/msme-consulting")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/msme-consulting" }],
   }),
   component: MsmeConsulting,
 });
@@ -77,13 +79,13 @@ const services = [
     icon: Stethoscope,
     title: "GAP360™ Methodology",
     description:
-      "Our flagship 5-phase framework — Diagnose, Analyse, Design, Implement and Sustain — that drives end-to-end business transformation.",
+      "Our flagship 6-phase framework — Diagnose, Align, Analyse, Design, Implement and Sustain — that drives end-to-end business transformation.",
   },
   {
     icon: Wrench,
     title: "Systems & Process Design",
     description:
-      "SOPs, workflows, reporting structures and accountability systems that make your business run without you.",
+      "As your business process improvement consultant, SBC builds SOPs, workflows and accountability systems that make your business run without you.",
   },
   {
     icon: Users,
@@ -154,9 +156,19 @@ const audience = [
   "MSMEs planning expansion or new ventures",
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "MSME Consulting",
+  provider: { "@type": "Organization", name: "Sagar Burse Consulting" },
+  areaServed: { "@type": "Country", name: "India" },
+  description,
+};
+
 function MsmeConsulting() {
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={serviceSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Our Expertise" }, { label: "MSME Consulting" }]} dark />
       <main>

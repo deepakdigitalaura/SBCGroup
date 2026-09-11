@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 
 const title = "Book Your Free 45-Minute Business Audit | SBC";
 const description =
-  "A focused 45-minute conversation with Dr. Sagar Burse — identifying where your business or institution is losing money, time and momentum. No sales pitch. No commitment.";
+  "A free business systems audit — a focused 45-minute call with Dr. Sagar Burse to find where your business is losing money, time and momentum. No sales pitch.";
 
 const labelClass = "font-medium text-[12px] uppercase tracking-[0.14em] text-ink-soft";
 const inputClass =
@@ -71,6 +71,7 @@ export const Route = createFileRoute("/book-free-audit")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/book-free-audit" }],
   }),
   component: BookFreeAudit,
 });

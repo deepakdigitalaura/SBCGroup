@@ -18,10 +18,11 @@ import { Reveal } from "@/components/sbc/primitives";
 import { StatBlock } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 const title = "Founder | Sagar Burse, PhD — Sagar Burse Consulting";
 const description =
-  "Sagar Burse, PhD is the Founder and Principal Consultant of SBC — a practitioner who stays until the job is done, across MSME consulting, institution building and policy advisory.";
+  "Sagar Burse, PhD — Founder of SBC and a strategic business consultant with 8+ years across MSME consulting, institution building and policy advisory.";
 
 export const Route = createFileRoute("/founder")({
   head: () => ({
@@ -33,6 +34,7 @@ export const Route = createFileRoute("/founder")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/founder" }],
   }),
   component: Founder,
 });
@@ -112,9 +114,25 @@ const engagements = [
   },
 ];
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sagar Burse",
+  honorificSuffix: "PhD",
+  jobTitle: "Founder & Principal Consultant",
+  worksFor: { "@type": "Organization", name: "Sagar Burse Consulting" },
+  alumniOf: [
+    { "@type": "CollegeOrUniversity", name: "GLS University" },
+    { "@type": "CollegeOrUniversity", name: "Gujarat University" },
+  ],
+  url: "https://sbcgroup.in/founder",
+  sameAs: ["https://www.linkedin.com/company/sbcgroup-in/"],
+};
+
 function Founder() {
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={personSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "About Us" }, { label: "Founder" }]} dark />
       <main>
@@ -141,7 +159,7 @@ function Founder() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="#book"
+                  href="/book-free-audit"
                   className="inline-flex items-center gap-2 bg-gold px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint"
                 >
                   Book Free Audit <ArrowRight className="size-4" />

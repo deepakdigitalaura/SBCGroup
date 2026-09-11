@@ -17,6 +17,7 @@ import { CTABand } from "@/components/sbc/CTABand";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 const title = "Policy Advisory for Government Bodies | SBC, Ahmedabad";
 const description =
@@ -32,6 +33,7 @@ export const Route = createFileRoute("/policy-advisory")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://sbcgroup.in/policy-advisory" }],
   }),
   component: PolicyAdvisory,
 });
@@ -90,9 +92,19 @@ const clients = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Policy Advisory",
+  provider: { "@type": "Organization", name: "Sagar Burse Consulting" },
+  areaServed: { "@type": "Country", name: "India" },
+  description,
+};
+
 function PolicyAdvisory() {
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={serviceSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Our Expertise" }, { label: "Policy Advisory" }]} dark />
       <main>

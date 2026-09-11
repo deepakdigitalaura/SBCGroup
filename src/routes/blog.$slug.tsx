@@ -5,6 +5,7 @@ import { CTABand } from "@/components/sbc/CTABand";
 import { StatCard } from "@/components/sbc/StatBlock";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
+import { JsonLd } from "@/components/sbc/JsonLd";
 import { getPostBySlug } from "@/lib/blog-data";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -27,6 +28,9 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: loaderData
+        ? [{ rel: "canonical", href: `https://sbcgroup.in/blog/${loaderData.slug}` }]
+        : [],
     };
   },
   component: BlogPostDetail,
@@ -45,8 +49,32 @@ function BlogPostDetail() {
     .filter((b): b is Extract<typeof b, { type: "h2" | "h3" }> => b.type === "h2" || b.type === "h3")
     .map((b) => ({ text: b.text, id: slugify(b.text), level: b.type }));
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    author: {
+      "@type": "Person",
+      name: "Sagar Burse",
+      url: "https://sbcgroup.in/founder",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sagar Burse Consulting",
+      logo: { "@type": "ImageObject", url: "https://sbcgroup.in/sbc-logo.png" },
+    },
+    datePublished: post.date,
+    dateModified: post.date,
+    description: post.metaDescription,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sbcgroup.in/blog/${post.slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={articleSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Blog", href: "/blog" }, { label: post.title }]} dark />
       <main>
