@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
 
 const columns = [
   {
@@ -90,12 +90,34 @@ export function Footer() {
               <li className="flex items-start gap-2 text-[14px] leading-relaxed break-words">
                 <Linkedin className="mt-0.5 size-4 shrink-0 text-paper" strokeWidth={1.75} aria-hidden="true" />
                 <a
-                  href="https://www.linkedin.com/company/sbcgroup-in/"
+                  href="https://www.linkedin.com/company/sbcglobal/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-paper/85 transition-colors hover:text-gold"
                 >
                   LinkedIn
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-[14px] leading-relaxed break-words">
+                <Facebook className="mt-0.5 size-4 shrink-0 text-paper" strokeWidth={1.75} aria-hidden="true" />
+                <a
+                  href="https://www.facebook.com/sbcgroup.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-paper/85 transition-colors hover:text-gold"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-[14px] leading-relaxed break-words">
+                <Instagram className="mt-0.5 size-4 shrink-0 text-paper" strokeWidth={1.75} aria-hidden="true" />
+                <a
+                  href="https://www.instagram.com/sbcgroup.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-paper/85 transition-colors hover:text-gold"
+                >
+                  Instagram
                 </a>
               </li>
             </ul>

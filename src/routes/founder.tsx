@@ -126,7 +126,7 @@ const personSchema = {
     { "@type": "CollegeOrUniversity", name: "Gujarat University" },
   ],
   url: "https://sbcgroup.in/founder",
-  sameAs: ["https://www.linkedin.com/company/sbcgroup-in/"],
+  sameAs: ["https://www.linkedin.com/in/drsagarburse/"],
 };
 
 function Founder() {
@@ -165,7 +165,9 @@ function Founder() {
                   Book Free Audit <ArrowRight className="size-4" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/sbcgroup-in/"
+                  href="https://www.linkedin.com/in/drsagarburse/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 border border-ink-tint px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:border-gold hover:text-gold"
                 >
                   LinkedIn Profile
