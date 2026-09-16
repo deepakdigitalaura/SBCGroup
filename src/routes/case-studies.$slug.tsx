@@ -6,6 +6,7 @@ import { StatCard } from "@/components/sbc/StatBlock";
 import { Reveal } from "@/components/sbc/primitives";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 import { getStudyBySlug } from "@/lib/case-studies-data";
+import { JsonLd } from "@/components/sbc/JsonLd";
 
 export const Route = createFileRoute("/case-studies/$slug")({
   loader: ({ params }) => {
@@ -52,8 +53,30 @@ export const Route = createFileRoute("/case-studies/$slug")({
 function CaseStudyDetail() {
   const { study, group } = Route.useLoaderData();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${study.name} | Case Study`,
+    author: {
+      "@type": "Person",
+      name: "Sagar Burse",
+      url: "https://sbcgroup.in/founder",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sagar Burse Consulting",
+      logo: { "@type": "ImageObject", url: "https://sbcgroup.in/sbc-logo.png" },
+    },
+    description: study.challenge,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sbcgroup.in/case-studies/${study.slug}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-paper">
+      <JsonLd data={articleSchema} />
       <Header />
       <Breadcrumbs
         trail={[{ label: "Case Studies", href: "/case-studies" }, { label: study.name }]}
