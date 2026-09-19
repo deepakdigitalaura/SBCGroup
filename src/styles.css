@@ -348,3 +348,16 @@
     transition: none;
   }
 }
+
+/* Keep server-rendered content visible when scripting is off (no-JS, crawlers, pre-hydration failures). */
+@media (scripting: none) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-graphic-in > * {
+    opacity: 1;
+  }
+}
