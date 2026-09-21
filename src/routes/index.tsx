@@ -51,7 +51,7 @@ const organizationSchema = {
     addressRegion: "Gujarat",
     addressCountry: "IN",
   },
-  sameAs: ["https://www.linkedin.com/company/sbcgroup-in/"],
+  sameAs: ["https://www.linkedin.com/company/sbcglobal/"],
 };
 
 const websiteSchema = {

@@ -20,7 +20,7 @@ export function NewsletterBand() {
         </Reveal>
         <div>
           <a
-            href="https://www.linkedin.com/company/sbcgroup-in/"
+            href="https://www.linkedin.com/company/sbcglobal/"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-gold px-6 py-3.5 text-[12px] font-semibold uppercase tracking-[0.16em] text-paper transition-colors hover:bg-gold-tint"
