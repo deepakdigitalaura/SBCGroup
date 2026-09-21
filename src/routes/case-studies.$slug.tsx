@@ -60,7 +60,10 @@ function CaseStudyDetail() {
     author: {
       "@type": "Person",
       name: "Sagar Burse",
+      jobTitle: "Founder & Principal Consultant",
       url: "https://sbcgroup.in/founder",
+      image: "https://sbcgroup.in/images/founder/sagar-burse-author.webp",
+      sameAs: ["https://www.linkedin.com/in/drsagarburse/"],
     },
     publisher: {
       "@type": "Organization",
@@ -174,6 +177,68 @@ function CaseStudyDetail() {
                 ))}
               </div>
             </div>
+
+            <aside
+              aria-labelledby="author-bio-heading"
+              className="mt-14 max-w-3xl border-t border-ink-tint pt-8"
+            >
+              <h2
+                id="author-bio-heading"
+                className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-soft"
+              >
+                About the Author
+              </h2>
+              <div className="mt-5 flex flex-col gap-5 border border-ink-tint bg-ink-wash p-6 sm:flex-row sm:items-start">
+                <img
+                  src="/images/founder/sagar-burse-author.webp"
+                  alt="Sagar Burse, PhD, Founder and Principal Consultant of Sagar Burse Consulting"
+                  width={112}
+                  height={112}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-square shrink-0 rounded-full border-2 border-gold object-cover"
+                />
+                <div className="min-w-0">
+                  <p className="font-display text-xl font-semibold text-ink">Sagar Burse, PhD</p>
+                  <p className="mt-1 font-display text-[15px] italic text-ink-soft">
+                    Founder &amp; Principal Consultant, Sagar Burse Consulting (SBC)
+                  </p>
+                  <p className="mt-3 text-[14px] leading-relaxed text-charcoal">
+                    Sagar Burse, PhD is the Founder and Principal Consultant of Sagar Burse
+                    Consulting (SBC), headquartered in Ahmedabad, Gujarat. With 8+ years of
+                    experience across business consulting, institutional setup, skill development,
+                    and regulatory compliance, he brings rare multi-domain depth to every
+                    engagement.
+                  </p>
+                  <p className="mt-3 text-[14px] leading-relaxed text-charcoal">
+                    Through SBC, he advises businesses using the GAP360™ methodology — staying with
+                    clients from diagnosis to implementation until measurable results are
+                    achieved.
+                  </p>
+                  <p className="mt-3 text-[13px] leading-relaxed text-ink-soft">
+                    PhD (Management), GLS University · MBA (Marketing), Gujarat University ·
+                    UGC-NET and GSET qualified
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-4">
+                    <a
+                      href="/founder"
+                      rel="author"
+                      className="text-[12px] font-semibold uppercase tracking-[0.12em] text-gold-deep transition-colors hover:text-gold"
+                    >
+                      View Full Profile →
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/drsagarburse/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[12px] font-semibold uppercase tracking-[0.12em] text-gold-deep transition-colors hover:text-gold"
+                    >
+                      LinkedIn →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </aside>
 
             <div className="mt-14">
               <Link
