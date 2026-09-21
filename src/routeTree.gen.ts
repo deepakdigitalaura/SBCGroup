@@ -14,7 +14,6 @@ import { Route as AboutSbcRouteImport } from './routes/about-sbc'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BookFreeAuditRouteImport } from './routes/book-free-audit'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
-import { Route as ConsultingFirmsInAhmedabadRouteImport } from './routes/consulting-firms-in-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FounderRouteImport } from './routes/founder'
 import { Route as Gap360RouteImport } from './routes/gap360'
@@ -55,12 +54,6 @@ const CaseStudiesRoute = CaseStudiesRouteImport.update({
   path: '/case-studies',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ConsultingFirmsInAhmedabadRoute =
-  ConsultingFirmsInAhmedabadRouteImport.update({
-    id: '/consulting-firms-in-ahmedabad',
-    path: '/consulting-firms-in-ahmedabad',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -140,7 +133,6 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
-  '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
   '/founder': typeof FounderRoute
   '/gap360': typeof Gap360Route
@@ -160,7 +152,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-sbc': typeof AboutSbcRoute
   '/book-free-audit': typeof BookFreeAuditRoute
-  '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
   '/founder': typeof FounderRoute
   '/gap360': typeof Gap360Route
@@ -183,7 +174,6 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
-  '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
   '/founder': typeof FounderRoute
   '/gap360': typeof Gap360Route
@@ -207,7 +197,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/book-free-audit'
     | '/case-studies'
-    | '/consulting-firms-in-ahmedabad'
     | '/contact'
     | '/founder'
     | '/gap360'
@@ -227,7 +216,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about-sbc'
     | '/book-free-audit'
-    | '/consulting-firms-in-ahmedabad'
     | '/contact'
     | '/founder'
     | '/gap360'
@@ -249,7 +237,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/book-free-audit'
     | '/case-studies'
-    | '/consulting-firms-in-ahmedabad'
     | '/contact'
     | '/founder'
     | '/gap360'
@@ -272,7 +259,6 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   BookFreeAuditRoute: typeof BookFreeAuditRoute
   CaseStudiesRoute: typeof CaseStudiesRouteWithChildren
-  ConsultingFirmsInAhmedabadRoute: typeof ConsultingFirmsInAhmedabadRoute
   ContactRoute: typeof ContactRoute
   FounderRoute: typeof FounderRoute
   Gap360Route: typeof Gap360Route
@@ -320,13 +306,6 @@ declare module '@tanstack/react-router' {
       path: '/case-studies'
       fullPath: '/case-studies'
       preLoaderRoute: typeof CaseStudiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/consulting-firms-in-ahmedabad': {
-      id: '/consulting-firms-in-ahmedabad'
-      path: '/consulting-firms-in-ahmedabad'
-      fullPath: '/consulting-firms-in-ahmedabad'
-      preLoaderRoute: typeof ConsultingFirmsInAhmedabadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -462,7 +441,6 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   BookFreeAuditRoute: BookFreeAuditRoute,
   CaseStudiesRoute: CaseStudiesRouteWithChildren,
-  ConsultingFirmsInAhmedabadRoute: ConsultingFirmsInAhmedabadRoute,
   ContactRoute: ContactRoute,
   FounderRoute: FounderRoute,
   Gap360Route: Gap360Route,
