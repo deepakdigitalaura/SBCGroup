@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutSbcRouteImport } from './routes/about-sbc'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BookFreeAuditRouteImport } from './routes/book-free-audit'
+import { Route as BusinessGrowthConsultingRouteImport } from './routes/business-growth-consulting'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as ConsultingFirmsInAhmedabadRouteImport } from './routes/consulting-firms-in-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -50,6 +51,12 @@ const BookFreeAuditRoute = BookFreeAuditRouteImport.update({
   path: '/book-free-audit',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BusinessGrowthConsultingRoute =
+  BusinessGrowthConsultingRouteImport.update({
+    id: '/business-growth-consulting',
+    path: '/business-growth-consulting',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
   id: '/case-studies',
   path: '/case-studies',
@@ -139,6 +146,7 @@ export interface FileRoutesByFullPath {
   '/about-sbc': typeof AboutSbcRoute
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
+  '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -160,6 +168,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-sbc': typeof AboutSbcRoute
   '/book-free-audit': typeof BookFreeAuditRoute
+  '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
   '/founder': typeof FounderRoute
@@ -182,6 +191,7 @@ export interface FileRoutesById {
   '/about-sbc': typeof AboutSbcRoute
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
+  '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -206,6 +216,7 @@ export interface FileRouteTypes {
     | '/about-sbc'
     | '/blog'
     | '/book-free-audit'
+    | '/business-growth-consulting'
     | '/case-studies'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
@@ -227,6 +238,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about-sbc'
     | '/book-free-audit'
+    | '/business-growth-consulting'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
     | '/founder'
@@ -248,6 +260,7 @@ export interface FileRouteTypes {
     | '/about-sbc'
     | '/blog'
     | '/book-free-audit'
+    | '/business-growth-consulting'
     | '/case-studies'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
@@ -271,6 +284,7 @@ export interface RootRouteChildren {
   AboutSbcRoute: typeof AboutSbcRoute
   BlogRoute: typeof BlogRouteWithChildren
   BookFreeAuditRoute: typeof BookFreeAuditRoute
+  BusinessGrowthConsultingRoute: typeof BusinessGrowthConsultingRoute
   CaseStudiesRoute: typeof CaseStudiesRouteWithChildren
   ConsultingFirmsInAhmedabadRoute: typeof ConsultingFirmsInAhmedabadRoute
   ContactRoute: typeof ContactRoute
@@ -313,6 +327,13 @@ declare module '@tanstack/react-router' {
       path: '/book-free-audit'
       fullPath: '/book-free-audit'
       preLoaderRoute: typeof BookFreeAuditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-growth-consulting': {
+      id: '/business-growth-consulting'
+      path: '/business-growth-consulting'
+      fullPath: '/business-growth-consulting'
+      preLoaderRoute: typeof BusinessGrowthConsultingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/case-studies': {
@@ -461,6 +482,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutSbcRoute: AboutSbcRoute,
   BlogRoute: BlogRouteWithChildren,
   BookFreeAuditRoute: BookFreeAuditRoute,
+  BusinessGrowthConsultingRoute: BusinessGrowthConsultingRoute,
   CaseStudiesRoute: CaseStudiesRouteWithChildren,
   ConsultingFirmsInAhmedabadRoute: ConsultingFirmsInAhmedabadRoute,
   ContactRoute: ContactRoute,
