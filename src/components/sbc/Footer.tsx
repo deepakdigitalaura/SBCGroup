@@ -23,6 +23,14 @@ const columns = [
       { text: "Policy Advisory", href: "/policy-advisory" },
     ],
   },
+  {
+    label: "Explore",
+    links: [
+      { text: "Consulting Firms in Ahmedabad", href: "/consulting-firms-in-ahmedabad" },
+      { text: "Business Growth Consulting", href: "/business-growth-consulting" },
+      { text: "Business Process Improvement", href: "/business-process-improvement" },
+    ],
+  },
 ];
 
 const contactInfo = [
