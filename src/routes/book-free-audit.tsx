@@ -10,6 +10,9 @@ const title = "Book Your Free 45-Minute Business Audit | SBC";
 const description =
   "A free business systems audit — a focused 45-minute call with Dr. Sagar Burse to find where your business is losing money, time and momentum. No sales pitch.";
 
+// Get keys at https://www.google.com/recaptcha/admin — must match RECAPTCHA_SITE_KEY in php-export/config.php
+const RECAPTCHA_SITE_KEY = "6Lc0qsgtAAAAAM_jBJU7HCVG-oA9eKhPvDkLLLvv";
+
 const labelClass = "font-medium text-[12px] uppercase tracking-[0.14em] text-ink-soft";
 const inputClass =
   "mt-2 w-full border border-ink-tint bg-paper px-4 py-3 text-[16px] text-ink focus:border-gold focus:outline-none";
@@ -78,6 +81,7 @@ export const Route = createFileRoute("/book-free-audit")({
       { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [{ rel: "canonical", href: "https://sbcgroup.in/book-free-audit" }],
+    scripts: [{ src: "https://www.google.com/recaptcha/api.js", async: true, defer: true }],
   }),
   component: BookFreeAudit,
 });
@@ -219,6 +223,7 @@ function BookFreeAudit() {
                     </select>
                   </label>
                 </div>
+                <div className="mt-6 g-recaptcha" data-sitekey={RECAPTCHA_SITE_KEY} />
                 <button
                   type="submit"
                   className="mt-6 w-full bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint"

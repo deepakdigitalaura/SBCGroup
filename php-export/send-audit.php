@@ -2,9 +2,15 @@
 define('SBC_APP', true);
 require __DIR__ . '/config.php';
 require __DIR__ . '/smtp-mailer.php';
+require __DIR__ . '/recaptcha.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /book-free-audit');
+    exit;
+}
+
+if (!sbc_recaptcha_ok()) {
+    header('Location: /book-free-audit?status=error');
     exit;
 }
 

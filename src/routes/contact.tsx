@@ -9,6 +9,9 @@ const title = "Contact | Sagar Burse Consulting";
 const description =
   "Contact Sagar Burse Consulting, a business consultant in Ahmedabad — for MSME consulting, institution building and policy advisory across Gujarat.";
 
+// Get keys at https://www.google.com/recaptcha/admin — must match RECAPTCHA_SITE_KEY in php-export/config.php
+const RECAPTCHA_SITE_KEY = "6Lc0qsgtAAAAAM_jBJU7HCVG-oA9eKhPvDkLLLvv";
+
 const labelClass = "font-medium text-[12px] uppercase tracking-[0.14em] text-ink-soft";
 const inputClass =
   "mt-2 w-full border border-ink-tint bg-paper px-4 py-3 text-[16px] text-ink focus:border-gold focus:outline-none";
@@ -30,6 +33,7 @@ export const Route = createFileRoute("/contact")({
       { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [{ rel: "canonical", href: "https://sbcgroup.in/contact" }],
+    scripts: [{ src: "https://www.google.com/recaptcha/api.js", async: true, defer: true }],
   }),
   component: Contact,
 });
@@ -142,6 +146,7 @@ function Contact() {
                       <textarea name="message" required rows={5} className={inputClass} />
                     </label>
                   </div>
+                  <div className="mt-6 g-recaptcha" data-sitekey={RECAPTCHA_SITE_KEY} />
                   <button
                     type="submit"
                     className="mt-6 inline-flex items-center gap-2 bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint"
