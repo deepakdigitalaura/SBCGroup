@@ -81,7 +81,16 @@ export const Route = createFileRoute("/book-free-audit")({
       { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [{ rel: "canonical", href: "https://sbcgroup.in/book-free-audit" }],
-    scripts: [{ src: "https://www.google.com/recaptcha/api.js", async: true, defer: true }],
+    scripts: [
+      {
+        children: `window.onRecaptchaLoad=function(){setTimeout(function(){var el=document.getElementById("audit-recaptcha");if(el&&!el.hasChildNodes()){grecaptcha.render("audit-recaptcha",{sitekey:"${RECAPTCHA_SITE_KEY}"})}},600)}`,
+      },
+      {
+        src: "https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoad",
+        async: true,
+        defer: true,
+      },
+    ],
   }),
   component: BookFreeAudit,
 });
@@ -223,7 +232,7 @@ function BookFreeAudit() {
                     </select>
                   </label>
                 </div>
-                <div className="mt-6 g-recaptcha" data-sitekey={RECAPTCHA_SITE_KEY} />
+                <div id="audit-recaptcha" className="mt-6" />
                 <button
                   type="submit"
                   className="mt-6 w-full bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint"

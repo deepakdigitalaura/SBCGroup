@@ -33,7 +33,16 @@ export const Route = createFileRoute("/contact")({
       { name: "twitter:image", content: "https://sbcgroup.in/sbc-logo.png" },
     ],
     links: [{ rel: "canonical", href: "https://sbcgroup.in/contact" }],
-    scripts: [{ src: "https://www.google.com/recaptcha/api.js", async: true, defer: true }],
+    scripts: [
+      {
+        children: `window.onRecaptchaLoad=function(){setTimeout(function(){var el=document.getElementById("contact-recaptcha");if(el&&!el.hasChildNodes()){grecaptcha.render("contact-recaptcha",{sitekey:"${RECAPTCHA_SITE_KEY}"})}},600)}`,
+      },
+      {
+        src: "https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoad",
+        async: true,
+        defer: true,
+      },
+    ],
   }),
   component: Contact,
 });
@@ -146,7 +155,7 @@ function Contact() {
                       <textarea name="message" required rows={5} className={inputClass} />
                     </label>
                   </div>
-                  <div className="mt-6 g-recaptcha" data-sitekey={RECAPTCHA_SITE_KEY} />
+                  <div id="contact-recaptcha" className="mt-6" />
                   <button
                     type="submit"
                     className="mt-6 inline-flex items-center gap-2 bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint"
