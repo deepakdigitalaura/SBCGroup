@@ -23,14 +23,6 @@ const columns = [
       { text: "Policy Advisory", href: "/policy-advisory" },
     ],
   },
-  {
-    label: "Explore",
-    links: [
-      { text: "Consulting Firms in Ahmedabad", href: "/consulting-firms-in-ahmedabad" },
-      { text: "Business Growth Consulting", href: "/business-growth-consulting" },
-      { text: "Business Process Improvement", href: "/business-process-improvement" },
-    ],
-  },
 ];
 
 const contactInfo = [
@@ -64,7 +56,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-4 lg:gap-x-6">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-3 lg:gap-x-6">
           {columns.map((col) => (
             <nav key={col.label} aria-label={col.label} className="min-w-0">
               <p className={headingClass}>{col.label}</p>
