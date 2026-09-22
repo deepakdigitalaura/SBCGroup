@@ -14,6 +14,7 @@ import { Route as AboutSbcRouteImport } from './routes/about-sbc'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BookFreeAuditRouteImport } from './routes/book-free-audit'
 import { Route as BusinessGrowthConsultingRouteImport } from './routes/business-growth-consulting'
+import { Route as BusinessProcessImprovementRouteImport } from './routes/business-process-improvement'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as ConsultingFirmsInAhmedabadRouteImport } from './routes/consulting-firms-in-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -55,6 +56,12 @@ const BusinessGrowthConsultingRoute =
   BusinessGrowthConsultingRouteImport.update({
     id: '/business-growth-consulting',
     path: '/business-growth-consulting',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessProcessImprovementRoute =
+  BusinessProcessImprovementRouteImport.update({
+    id: '/business-process-improvement',
+    path: '/business-process-improvement',
     getParentRoute: () => rootRouteImport,
   } as any)
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
@@ -147,6 +154,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
   '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
+  '/business-process-improvement': typeof BusinessProcessImprovementRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -169,6 +177,7 @@ export interface FileRoutesByTo {
   '/about-sbc': typeof AboutSbcRoute
   '/book-free-audit': typeof BookFreeAuditRoute
   '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
+  '/business-process-improvement': typeof BusinessProcessImprovementRoute
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
   '/founder': typeof FounderRoute
@@ -192,6 +201,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/book-free-audit': typeof BookFreeAuditRoute
   '/business-growth-consulting': typeof BusinessGrowthConsultingRoute
+  '/business-process-improvement': typeof BusinessProcessImprovementRoute
   '/case-studies': typeof CaseStudiesRouteWithChildren
   '/consulting-firms-in-ahmedabad': typeof ConsultingFirmsInAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -217,6 +227,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/book-free-audit'
     | '/business-growth-consulting'
+    | '/business-process-improvement'
     | '/case-studies'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
@@ -239,6 +250,7 @@ export interface FileRouteTypes {
     | '/about-sbc'
     | '/book-free-audit'
     | '/business-growth-consulting'
+    | '/business-process-improvement'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
     | '/founder'
@@ -261,6 +273,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/book-free-audit'
     | '/business-growth-consulting'
+    | '/business-process-improvement'
     | '/case-studies'
     | '/consulting-firms-in-ahmedabad'
     | '/contact'
@@ -285,6 +298,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   BookFreeAuditRoute: typeof BookFreeAuditRoute
   BusinessGrowthConsultingRoute: typeof BusinessGrowthConsultingRoute
+  BusinessProcessImprovementRoute: typeof BusinessProcessImprovementRoute
   CaseStudiesRoute: typeof CaseStudiesRouteWithChildren
   ConsultingFirmsInAhmedabadRoute: typeof ConsultingFirmsInAhmedabadRoute
   ContactRoute: typeof ContactRoute
@@ -334,6 +348,13 @@ declare module '@tanstack/react-router' {
       path: '/business-growth-consulting'
       fullPath: '/business-growth-consulting'
       preLoaderRoute: typeof BusinessGrowthConsultingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-process-improvement': {
+      id: '/business-process-improvement'
+      path: '/business-process-improvement'
+      fullPath: '/business-process-improvement'
+      preLoaderRoute: typeof BusinessProcessImprovementRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/case-studies': {
@@ -483,6 +504,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   BookFreeAuditRoute: BookFreeAuditRoute,
   BusinessGrowthConsultingRoute: BusinessGrowthConsultingRoute,
+  BusinessProcessImprovementRoute: BusinessProcessImprovementRoute,
   CaseStudiesRoute: CaseStudiesRouteWithChildren,
   ConsultingFirmsInAhmedabadRoute: ConsultingFirmsInAhmedabadRoute,
   ContactRoute: ContactRoute,
