@@ -651,6 +651,13 @@ book a free audit
 </a>
 {" and ask."}
 </p>
+<p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-charcoal">
+{"For a step-by-step version of these criteria — a full 10-point hiring checklist, the exact questions to ask and the red flags to watch for — see our guide on "}
+<a href="/blog/management-consultant-hiring-checklist-ahmedabad" className="font-semibold text-gold-deep transition-colors hover:text-gold">
+what to check before hiring a management consultant
+</a>
+{"."}
+</p>
 </div>
 </section>
 <section className="section-y border-b border-ink-tint bg-ink-wash">
