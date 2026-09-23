@@ -29,6 +29,7 @@ import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as StrategicResearchFeasibilityRouteImport } from './routes/strategic-research-feasibility'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as BlogManagementConsultantHiringChecklistAhmedabadRouteImport } from './routes/blog.management-consultant-hiring-checklist-ahmedabad'
 import { Route as CaseStudiesIndexRouteImport } from './routes/case-studies.index'
 import { Route as CaseStudiesSlugRouteImport } from './routes/case-studies.$slug'
 
@@ -137,6 +138,12 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const BlogManagementConsultantHiringChecklistAhmedabadRoute =
+  BlogManagementConsultantHiringChecklistAhmedabadRouteImport.update({
+    id: '/management-consultant-hiring-checklist-ahmedabad',
+    path: '/management-consultant-hiring-checklist-ahmedabad',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const CaseStudiesIndexRoute = CaseStudiesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -168,6 +175,7 @@ export interface FileRoutesByFullPath {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -190,6 +198,7 @@ export interface FileRoutesByTo {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog': typeof BlogIndexRoute
   '/case-studies': typeof CaseStudiesIndexRoute
@@ -215,6 +224,7 @@ export interface FileRoutesById {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -241,6 +251,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog/'
     | '/case-studies/'
@@ -263,6 +274,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog'
     | '/case-studies'
@@ -287,6 +299,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog/'
     | '/case-studies/'
@@ -455,6 +468,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/management-consultant-hiring-checklist-ahmedabad': {
+      id: '/blog/management-consultant-hiring-checklist-ahmedabad'
+      path: '/management-consultant-hiring-checklist-ahmedabad'
+      fullPath: '/blog/management-consultant-hiring-checklist-ahmedabad'
+      preLoaderRoute: typeof BlogManagementConsultantHiringChecklistAhmedabadRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/case-studies/': {
       id: '/case-studies/'
       path: '/'
@@ -474,11 +494,14 @@ declare module '@tanstack/react-router' {
 
 interface BlogRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
+  BlogManagementConsultantHiringChecklistAhmedabadRoute: typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
 const BlogRouteChildren: BlogRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
+  BlogManagementConsultantHiringChecklistAhmedabadRoute:
+    BlogManagementConsultantHiringChecklistAhmedabadRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
 
