@@ -134,7 +134,7 @@ const webPageSchema = {
     url: "https://sbcgroup.in/images/founder/sagar-burse-founder-sbc-ahmedabad.webp",
   },
   datePublished: "2026-09-22",
-  dateModified: "2026-09-22",
+  dateModified: "2026-09-28",
   author: {
     "@type": "Person",
     name: "Sagar Burse",
@@ -289,7 +289,7 @@ function BusinessGrowthConsulting() {
                   Sagar Burse, PhD
                 </a>
                 {", Founder & Principal Consultant · Last updated "}
-                <time dateTime="2026-09-22">22 September 2026</time>
+                <time dateTime="2026-09-28">28 September 2026</time>
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
