@@ -35,6 +35,7 @@ import { StatBlock } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 import { JsonLd } from "@/components/sbc/JsonLd";
+import { professionalServiceSchema, buildServiceSchema } from "@/lib/sbc-schema";
 
 const title = "Business Process Improvement Consultant: Complete Guide | SBC";
 const description =
@@ -154,52 +155,15 @@ const webPageSchema = {
   },
 };
 
-const businessSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://sbcgroup.in/#professional-service",
-  name: "Sagar Burse Consulting (SBC)",
-  alternateName: "SBC",
-  url: "https://sbcgroup.in",
-  logo: "https://sbcgroup.in/sbc-logo.png",
-  image: "https://sbcgroup.in/images/founder/sagar-burse-founder-sbc-ahmedabad.webp",
+const serviceSchema = buildServiceSchema({
+  url: "https://sbcgroup.in/business-process-improvement",
+  name: "Business Process Improvement Consulting",
+  serviceType: "Business process improvement consulting",
   description:
-    "Sagar Burse Consulting (SBC) is a business process improvement consultant headquartered in Ahmedabad, Gujarat, serving MSMEs and institutions across India with GAP360™ process diagnostics, SOP design and implementation.",
-  email: "consulting@sbcgroup.in",
-  telephone: "+91-8128310116",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Ahmedabad",
-    addressRegion: "Gujarat",
-    addressCountry: "IN",
-  },
+    "Business process improvement consulting for MSMEs and institutions across India: GAP360™ process diagnostics, SOP design and implementation support until the new process is adopted.",
   areaServed: [
-    {
-      "@type": "State",
-      name: "Gujarat",
-    },
-    {
-      "@type": "Country",
-      name: "India",
-    },
-  ],
-  founder: {
-    "@type": "Person",
-    name: "Sagar Burse",
-    honorificSuffix: "PhD",
-    jobTitle: "Founder & Principal Consultant",
-    url: "https://sbcgroup.in/founder",
-    image: "https://sbcgroup.in/images/founder/sagar-burse-author.webp",
-    sameAs: ["https://www.linkedin.com/in/drsagarburse/"],
-  },
-  knowsAbout: [
-    "Business process improvement",
-    "Business process management",
-    "Process improvement consulting",
-    "SOP design",
-    "MSME consulting",
-    "Business growth consulting",
-    "GAP360 gap analysis",
+    { "@type": "State", name: "Gujarat" },
+    { "@type": "Country", name: "India" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -237,12 +201,7 @@ const businessSchema = {
       },
     ],
   },
-  sameAs: [
-    "https://www.linkedin.com/company/sbcglobal/",
-    "https://www.facebook.com/sbcgroup.in",
-    "https://www.instagram.com/sbcgroup.in",
-  ],
-};
+});
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -258,7 +217,8 @@ function BusinessProcessImprovement() {
   return (
     <div className="min-h-screen bg-paper">
       <JsonLd data={webPageSchema} />
-      <JsonLd data={businessSchema} />
+      <JsonLd data={professionalServiceSchema} />
+      <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Business Process Improvement" }]} dark />

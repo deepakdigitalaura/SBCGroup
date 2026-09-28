@@ -35,6 +35,7 @@ import { StatBlock } from "@/components/sbc/StatBlock";
 import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 import { JsonLd } from "@/components/sbc/JsonLd";
+import { professionalServiceSchema, buildServiceSchema } from "@/lib/sbc-schema";
 
 const title = "Business Growth Consulting Services: Complete Guide | SBC";
 const description =
@@ -154,52 +155,15 @@ const webPageSchema = {
   },
 };
 
-const businessSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://sbcgroup.in/#professional-service",
-  name: "Sagar Burse Consulting (SBC)",
-  alternateName: "SBC",
-  url: "https://sbcgroup.in",
-  logo: "https://sbcgroup.in/sbc-logo.png",
-  image: "https://sbcgroup.in/images/founder/sagar-burse-founder-sbc-ahmedabad.webp",
+const serviceSchema = buildServiceSchema({
+  url: "https://sbcgroup.in/business-growth-consulting",
+  name: "Business Growth Consulting",
+  serviceType: "Business growth consulting",
   description:
-    "Sagar Burse Consulting (SBC) is a business growth consulting firm headquartered in Ahmedabad, Gujarat, serving MSMEs and institutions across India with GAP360™ diagnostics, strategic planning and implementation.",
-  email: "consulting@sbcgroup.in",
-  telephone: "+91-8128310116",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Ahmedabad",
-    addressRegion: "Gujarat",
-    addressCountry: "IN",
-  },
+    "Business growth consulting for MSMEs and institutions across India: GAP360™ diagnostics, strategic planning and implementation support that turns a growth plan into measurable results.",
   areaServed: [
-    {
-      "@type": "State",
-      name: "Gujarat",
-    },
-    {
-      "@type": "Country",
-      name: "India",
-    },
-  ],
-  founder: {
-    "@type": "Person",
-    name: "Sagar Burse",
-    honorificSuffix: "PhD",
-    jobTitle: "Founder & Principal Consultant",
-    url: "https://sbcgroup.in/founder",
-    image: "https://sbcgroup.in/images/founder/sagar-burse-author.webp",
-    sameAs: ["https://www.linkedin.com/in/drsagarburse/"],
-  },
-  knowsAbout: [
-    "Business growth consulting",
-    "Growth strategy consulting",
-    "Strategic planning consulting",
-    "MSME consulting",
-    "Business process improvement",
-    "GAP360 gap analysis",
-    "Feasibility studies",
+    { "@type": "State", name: "Gujarat" },
+    { "@type": "Country", name: "India" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -237,12 +201,7 @@ const businessSchema = {
       },
     ],
   },
-  sameAs: [
-    "https://www.linkedin.com/company/sbcglobal/",
-    "https://www.facebook.com/sbcgroup.in",
-    "https://www.instagram.com/sbcgroup.in",
-  ],
-};
+});
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -258,7 +217,8 @@ function BusinessGrowthConsulting() {
   return (
     <div className="min-h-screen bg-paper">
       <JsonLd data={webPageSchema} />
-      <JsonLd data={businessSchema} />
+      <JsonLd data={professionalServiceSchema} />
+      <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <Header />
       <Breadcrumbs trail={[{ label: "Business Growth Consulting" }]} dark />
