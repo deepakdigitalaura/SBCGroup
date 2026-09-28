@@ -80,15 +80,15 @@ const faqs: [string, string][] = [
   ],
   [
     "What makes SBC different from other business growth consulting firms?",
-    "SBC is implementation-led: every growth engagement starts with a GAP360™ diagnostic, not a template, and we stay with your team through execution until growth is measurable. The founder, Sagar Burse, PhD, is personally involved from the free audit onward.",
+    "Many growth consultants hand over a plan and leave; SBC stays to execute it. Every growth engagement begins with a GAP360™ diagnostic instead of a template, and the founder, Sagar Burse, PhD, is personally involved from the free audit onward.",
   ],
   [
     "Which industries does SBC’s growth consulting serve?",
-    "SBC works with MSMEs in manufacturing, trading, distribution and services, as well as universities, skill-development institutions, industry associations and public sector undertakings. Published case studies include a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business.",
+    "SBC’s growth work covers MSMEs in manufacturing, trading, distribution and services, and institutions such as universities, skill-development bodies, industry associations and public sector undertakings. Published growth case studies include a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business, each with measurable results.",
   ],
   [
     "How much do business growth consulting services cost?",
-    "Cost depends on the scope, duration and team required, so SBC does not publish a fixed price list. Every engagement begins with a free 45-minute business systems audit, and any further work is scoped with defined growth milestones so you know exactly what you are paying for.",
+    "SBC does not publish a fixed price list because the cost of growth consulting depends on scope, duration and the team required. Every engagement begins with a free 45-minute business systems audit, and further work is scoped around defined growth milestones so you know what you are paying for.",
   ],
   [
     "How long does a growth consulting engagement take?",
@@ -107,8 +107,8 @@ const faqs: [string, string][] = [
     "Yes. SBC is headquartered in Ahmedabad, Gujarat, but serves MSMEs, institutions and government bodies across India, including engagements with a national scope such as a skill-development institute. Growth diagnostics and strategy sessions can be run remotely, with implementation support scoped to your location.",
   ],
   [
-    "How can I contact SBC or book a free consultation?",
-    "Book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.",
+    "How do I book a free growth consultation with SBC?",
+    "To talk about growth, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.",
   ],
 ];
 
@@ -717,7 +717,7 @@ function BusinessGrowthConsulting() {
             </Reveal>
             <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
               {
-                "Hold every growth strategy consulting firm you shortlist to the same six criteria, including us. If you want to see how SBC answers each one, "
+                "Before you sign with any growth consulting firm, put these same six questions to each of them, SBC included. To hear our answers first-hand,  "
               }
               <a
                 href="/book-free-audit"
@@ -752,7 +752,7 @@ function BusinessGrowthConsulting() {
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
                   {
-                    "Today SBC’s growth consulting draws on all four practice divisions — MSME consulting, institution building, strategic research and policy advisory — serving founders and institutional leaders across Gujarat and India. Read more about "
+                    "For growth engagements, SBC brings its strategic research and policy expertise alongside MSME consulting, so a growth plan is checked against market data and regulatory requirements, not just your internal numbers. Read more about  "
                   }
                   <a
                     href="/about-sbc"
@@ -813,8 +813,7 @@ function BusinessGrowthConsulting() {
                 Growth Consulting Services We Offer
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                Three of SBC’s practice divisions cover the most common reasons a business hires a
-                growth consultant.
+                SBC’s practice divisions map to the three most common reasons a business looks for a growth consultant.
               </p>
             </Reveal>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -874,10 +873,7 @@ function BusinessGrowthConsulting() {
                 The GAP360™ Growth Method
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                GAP360™ (Growth Acceleration Pathway 360°) is SBC’s flagship growth strategy
-                consulting framework, developed by Sagar Burse, PhD through on-ground work with
-                Indian MSMEs. It looks across operations, systems, people, process and strategy, and
-                moves every growth engagement through the same six phases.
+                GAP360™ (Growth Acceleration Pathway 360°) is the framework SBC uses to turn a growth strategy into execution. Sagar Burse, PhD developed it through on-ground work with Indian MSMEs. It looks across operations, systems, people, process and strategy, and takes every growth engagement through the same six phases.
               </p>
             </Reveal>
             <Reveal as="section" className="mt-8">
@@ -949,8 +945,7 @@ function BusinessGrowthConsulting() {
                     <h3 className="font-display text-base font-semibold text-ink">Implement</h3>
                   </div>
                   <p className="text-[15px] leading-relaxed text-charcoal sm:flex-1">
-                    Hands-on execution alongside your team — managing resistance and
-                    course-correcting in real time.
+                    Hands-on execution of the growth roadmap with your team, resolving resistance and adjusting course as results come in.
                   </p>
                 </li>
                 <li className="flex flex-col gap-3 py-6 sm:flex-row sm:items-start sm:gap-6">
@@ -987,8 +982,7 @@ function BusinessGrowthConsulting() {
                 Results From Growth Consulting Engagements
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                Numbers matter more than adjectives. These growth outcomes come from SBC engagements
-                and are published in full in our case studies.
+                Growth shows up in the numbers: faster delivery, lower attrition, more founder time and lower cost. Each outcome below comes from a real SBC engagement and is published in full in our case studies.
               </p>
             </Reveal>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -1247,16 +1241,10 @@ function BusinessGrowthConsulting() {
                   Founder &amp; Principal Consultant, Sagar Burse Consulting (SBC)
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                  Sagar Burse, PhD leads every growth engagement at SBC personally, starting from
-                  the free business systems audit. With 8+ years of experience across business
-                  consulting, institutional setup, skill development and regulatory compliance, he
-                  brings rare multi-domain depth to growth planning.
+                  Growth engagements at SBC are led personally by Sagar Burse, PhD, from the free business systems audit onward. His 8+ years across business consulting, institutional setup, skill development and regulatory compliance mean a growth plan is checked from several angles: operations, people, compliance and market.
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                  His MSME growth engagements include a rubber and plastics manufacturer, an
-                  industrial components manufacturer and a trading and distribution business,
-                  alongside institutional growth work such as a skill-focused public university in
-                  Gujarat and a Centre of Excellence in Mining for a Gujarat PSU.
+                  On the MSME side, his growth work spans a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business. On the institutional side it includes a skill-focused public university in Gujarat and a Centre of Excellence in Mining for a Gujarat PSU.
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex gap-2 text-[15.5px] leading-relaxed text-charcoal">
@@ -1399,10 +1387,7 @@ function BusinessGrowthConsulting() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      SBC is implementation-led: every growth engagement starts with a GAP360™
-                      diagnostic, not a template, and we stay with your team through execution until
-                      growth is measurable. The founder, Sagar Burse, PhD, is personally involved
-                      from the free audit onward.
+                      Many growth consultants hand over a plan and leave; SBC stays to execute it. Every growth engagement begins with a GAP360™ diagnostic instead of a template, and the founder, Sagar Burse, PhD, is personally involved from the free audit onward.
                     </p>
                   </div>
                 </details>
@@ -1415,11 +1400,7 @@ function BusinessGrowthConsulting() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      SBC works with MSMEs in manufacturing, trading, distribution and services, as
-                      well as universities, skill-development institutions, industry associations
-                      and public sector undertakings. Published case studies include a rubber and
-                      plastics manufacturer, an industrial components manufacturer and a trading and
-                      distribution business.
+                      SBC’s growth work covers MSMEs in manufacturing, trading, distribution and services, and institutions such as universities, skill-development bodies, industry associations and public sector undertakings. Published growth case studies include a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business, each with measurable results.
                     </p>
                   </div>
                 </details>
@@ -1432,10 +1413,7 @@ function BusinessGrowthConsulting() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      Cost depends on the scope, duration and team required, so SBC does not publish
-                      a fixed price list. Every engagement begins with a free 45-minute business
-                      systems audit, and any further work is scoped with defined growth milestones
-                      so you know exactly what you are paying for.
+                      SBC does not publish a fixed price list because the cost of growth consulting depends on scope, duration and the team required. Every engagement begins with a free 45-minute business systems audit, and further work is scoped around defined growth milestones so you know what you are paying for.
                     </p>
                   </div>
                 </details>
@@ -1507,15 +1485,13 @@ function BusinessGrowthConsulting() {
                 <details name="faq" className="faq-item border border-ink-tint bg-card">
                   <summary className="flex cursor-pointer items-center justify-between gap-4 p-5">
                     <h3 className="font-display text-lg font-semibold leading-snug text-ink">
-                      How can I contact SBC or book a free consultation?
+                      How do I book a free growth consultation with SBC?
                     </h3>
                     <ChevronDown className="faq-chev size-4 shrink-0 text-gold" />
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      Book the free business systems audit at sbcgroup.in/book-free-audit, call +91
-                      8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24
-                      hours on business days.
+                      To talk about growth, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.
                     </p>
                   </div>
                 </details>

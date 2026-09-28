@@ -80,11 +80,11 @@ const faqs: [string, string][] = [
   ],
   [
     "What makes SBC different from other process improvement consulting firms?",
-    "SBC is implementation-led: every process improvement engagement starts with a GAP360™ diagnostic, not a template, and we stay with your team through rollout and training until the new process is measurable. Sagar Burse, PhD is personally involved from the free audit onward.",
+    "SBC redesigns the workflow before writing the SOP, then stays through rollout and training until the new process is being followed. Every process improvement engagement starts with a GAP360™ diagnostic, not a template, and Sagar Burse, PhD is personally involved from the free audit onward.",
   ],
   [
     "Which industries does SBC’s process improvement consulting serve?",
-    "SBC works with MSMEs in manufacturing, trading, distribution and services, as well as universities, skill-development institutions, industry associations and public sector undertakings. Published case studies include a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business.",
+    "Process improvement work at SBC spans MSMEs in manufacturing, trading, distribution and services, plus universities, skill-development institutions, industry associations and public sector undertakings. Published examples include a delivery workflow at a rubber and plastics manufacturer, a reporting process at an industrial components manufacturer and hiring at a trading and distribution business.",
   ],
   [
     "How much do business process improvement consulting services cost?",
@@ -100,15 +100,15 @@ const faqs: [string, string][] = [
   ],
   [
     "Can a small business or MSME benefit from process improvement consulting?",
-    "Yes. SBC’s process improvement work is built for founder-led MSMEs, including businesses with 25–60 employees where processes still run on tribal knowledge. Typical outcomes include documented SOPs, defined KPIs, and measurable improvements in turnaround time, rework rate or on-time delivery.",
+    "Yes. Smaller businesses often gain the most, because their processes still live in people’s heads. SBC’s process improvement work is built for founder-led MSMEs with 25–60 employees; typical outcomes include documented SOPs, defined KPIs, and measurable improvements in turnaround time, rework rate or on-time delivery.",
   ],
   [
     "Does SBC provide business process management consultant services outside Ahmedabad?",
     "Yes. SBC is headquartered in Ahmedabad, Gujarat, but serves MSMEs, institutions and government bodies across India. Process diagnostics and workflow design sessions can be run remotely, with implementation and training support scoped to your location.",
   ],
   [
-    "How can I contact SBC or book a free consultation?",
-    "Book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.",
+    "How do I book a free process improvement audit with SBC?",
+    "To start on a process problem, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.",
   ],
 ];
 
@@ -729,7 +729,7 @@ function BusinessProcessImprovement() {
             </Reveal>
             <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
               {
-                "Hold every business process management consultant you shortlist to the same six criteria, including us. If you want to see how SBC answers each one, "
+                "Ask every process improvement consultant on your shortlist the same six questions, us included. If you would like to hear how SBC answers them,  "
               }
               <a
                 href="/book-free-audit"
@@ -764,7 +764,7 @@ function BusinessProcessImprovement() {
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
                   {
-                    "Today SBC’s process improvement work draws on all four practice divisions — MSME consulting, institution building, strategic research and policy advisory — serving founders and institutional leaders across Gujarat and India. Read more about "
+                    "For process work, SBC draws on its institution-building and policy experience as well as MSME consulting, which helps when a process has to meet regulatory or compliance requirements as well as operational ones. Read more about  "
                   }
                   <a
                     href="/about-sbc"
@@ -825,8 +825,7 @@ function BusinessProcessImprovement() {
                 Process Improvement Services We Offer
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                Three of SBC’s practice divisions cover the most common reasons a business hires a
-                process improvement consultant.
+                Three of SBC’s practice divisions address the situations in which businesses most often look for process improvement help.
               </p>
             </Reveal>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -997,8 +996,7 @@ function BusinessProcessImprovement() {
                 Results From Process Improvement Engagements
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                Numbers matter more than adjectives. These process outcomes come from SBC
-                engagements and are published in full in our case studies.
+                Process improvement is proven by before-and-after numbers. Each result below comes from a real SBC engagement, with the full method and timeline in the linked case study.
               </p>
             </Reveal>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -1262,16 +1260,10 @@ function BusinessProcessImprovement() {
                   Founder &amp; Principal Consultant, Sagar Burse Consulting (SBC)
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                  Sagar Burse, PhD leads every process improvement engagement at SBC personally,
-                  starting from the free business systems audit. With 8+ years of experience across
-                  business consulting, institutional setup, skill development and regulatory
-                  compliance, he brings rare multi-domain depth to process design.
+                  Sagar Burse, PhD personally leads every process improvement engagement, from the free business systems audit through to rollout. His 8+ years across business consulting, institutional setup, skill development and regulatory compliance help him design processes that fit real operations, people and compliance needs rather than textbook flowcharts.
                 </p>
                 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-                  His MSME process engagements include a rubber and plastics manufacturer, an
-                  industrial components manufacturer and a trading and distribution business,
-                  alongside institutional process work such as a skill-focused public university in
-                  Gujarat and a Centre of Excellence in Mining for a Gujarat PSU.
+                  Workflow and SOP design has been part of his work with a rubber and plastics manufacturer, an industrial components manufacturer and a trading and distribution business, as well as institutional setups such as a skill-focused public university in Gujarat and a Centre of Excellence in Mining for a Gujarat PSU.
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex gap-2 text-[15.5px] leading-relaxed text-charcoal">
@@ -1416,10 +1408,7 @@ function BusinessProcessImprovement() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      SBC is implementation-led: every process improvement engagement starts with a
-                      GAP360™ diagnostic, not a template, and we stay with your team through rollout
-                      and training until the new process is measurable. Sagar Burse, PhD is
-                      personally involved from the free audit onward.
+                      SBC redesigns the workflow before writing the SOP, then stays through rollout and training until the new process is being followed. Every process improvement engagement starts with a GAP360™ diagnostic, not a template, and Sagar Burse, PhD is personally involved from the free audit onward.
                     </p>
                   </div>
                 </details>
@@ -1432,11 +1421,7 @@ function BusinessProcessImprovement() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      SBC works with MSMEs in manufacturing, trading, distribution and services, as
-                      well as universities, skill-development institutions, industry associations
-                      and public sector undertakings. Published case studies include a rubber and
-                      plastics manufacturer, an industrial components manufacturer and a trading and
-                      distribution business.
+                      Process improvement work at SBC spans MSMEs in manufacturing, trading, distribution and services, plus universities, skill-development institutions, industry associations and public sector undertakings. Published examples include a delivery workflow at a rubber and plastics manufacturer, a reporting process at an industrial components manufacturer and hiring at a trading and distribution business.
                     </p>
                   </div>
                 </details>
@@ -1497,10 +1482,7 @@ function BusinessProcessImprovement() {
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      Yes. SBC’s process improvement work is built for founder-led MSMEs, including
-                      businesses with 25–60 employees where processes still run on tribal knowledge.
-                      Typical outcomes include documented SOPs, defined KPIs, and measurable
-                      improvements in turnaround time, rework rate or on-time delivery.
+                      Yes. Smaller businesses often gain the most, because their processes still live in people’s heads. SBC’s process improvement work is built for founder-led MSMEs with 25–60 employees; typical outcomes include documented SOPs, defined KPIs, and measurable improvements in turnaround time, rework rate or on-time delivery.
                     </p>
                   </div>
                 </details>
@@ -1524,15 +1506,13 @@ function BusinessProcessImprovement() {
                 <details name="faq" className="faq-item border border-ink-tint bg-card">
                   <summary className="flex cursor-pointer items-center justify-between gap-4 p-5">
                     <h3 className="font-display text-lg font-semibold leading-snug text-ink">
-                      How can I contact SBC or book a free consultation?
+                      How do I book a free process improvement audit with SBC?
                     </h3>
                     <ChevronDown className="faq-chev size-4 shrink-0 text-gold" />
                   </summary>
                   <div className="border-t border-ink-tint p-5">
                     <p className="text-[15.5px] leading-relaxed text-charcoal">
-                      Book the free business systems audit at sbcgroup.in/book-free-audit, call +91
-                      8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24
-                      hours on business days.
+                      To start on a process problem, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.
                     </p>
                   </div>
                 </details>

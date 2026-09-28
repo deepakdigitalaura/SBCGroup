@@ -83,7 +83,7 @@ const faqs: [string, string][] = [
   ],
   [
     "How can I contact SBC or book a consultation?",
-    "Book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC is based in Ahmedabad, Gujarat, and typically responds within 24 hours on business days."
+    "To meet or speak with SBC in Ahmedabad, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days."
   ]
 ];
 
@@ -601,7 +601,7 @@ Prefer firms that let you test the fit first — for example a free audit or a s
 </article>
 </Reveal>
 <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
-{"Hold every firm you shortlist to the same six criteria, including us. If you want to see how SBC answers each one, "}
+{"Use the same six criteria to compare every firm on your shortlist, SBC included. To see how we answer each one,  "}
 <a href="/book-free-audit" className="font-semibold text-gold-deep transition-colors hover:text-gold">
 book a free audit
 </a>
@@ -701,7 +701,7 @@ business process improvement consulting
 The GAP360™ Method: Gap Analysis and Business Process Improvement
 </h2>
 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-GAP360™ (Growth Acceleration Pathway 360°) is SBC’s flagship gap analysis consulting framework, developed by Sagar Burse, PhD through on-ground consulting with Indian MSMEs. It looks across operations, systems, people, process and strategy, and moves every engagement through the same six phases.
+GAP360™ (Growth Acceleration Pathway 360°) is SBC’s documented method for finding and closing gaps in a business, the kind of named, phased method this guide recommends looking for in any firm. Sagar Burse, PhD developed it through on-ground consulting with Indian MSMEs. It looks across operations, systems, people, process and strategy, and moves every engagement through the same six phases.
 </p>
 </Reveal>
 <Reveal as="section" className="mt-8">
@@ -803,7 +803,7 @@ Explore the full GAP360™ methodology →
 Results From Consulting Engagements in Gujarat
 </h2>
 <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
-Numbers matter more than adjectives. These business growth consulting outcomes come from SBC engagements and are published in full in our case studies.
+These are results from SBC engagements with Gujarat-based businesses and institutions, each published with its scope and timeline in the case studies. It is the kind of evidence any consulting firm should be able to show you.
 </p>
 </Reveal>
 <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -831,7 +831,7 @@ Industrial · Gujarat
 Industrial Components Manufacturer
 </h3>
 <p className="mt-3 flex-1 text-[15px] leading-relaxed text-charcoal">
-A 3-tier reporting structure with defined KRAs and KPIs freed 12 hours a week of the founder’s time, with the accountability system live in 60 days.
+Accountability was the gap here. A 3-tier reporting structure with defined KRAs and KPIs went live in 60 days and freed 12 hours a week of the founder’s time.
 </p>
 <div className="mt-4">
 <a href="/case-studies/industrial-components-manufacturer" className="inline-flex items-center gap-1.5 py-1 text-[12px] font-semibold uppercase tracking-[0.16em] text-gold-deep transition-colors hover:text-gold">
@@ -847,7 +847,7 @@ Trading &amp; Distribution · Gujarat
 Trading &amp; Distribution Business
 </h3>
 <p className="mt-3 flex-1 text-[15px] leading-relaxed text-charcoal">
-Attrition fell from 34% to 18% and the hiring cycle from 45 to 22 days after SBC built the HR architecture from the ground up over six months.
+SBC built the HR architecture from the ground up over six months, bringing attrition down from 34% to 18% and the hiring cycle from 45 to 22 days.
 </p>
 <div className="mt-4">
 <a href="/case-studies/trading-distribution-business" className="inline-flex items-center gap-1.5 py-1 text-[12px] font-semibold uppercase tracking-[0.16em] text-gold-deep transition-colors hover:text-gold">
@@ -1257,7 +1257,7 @@ How can I contact SBC or book a consultation?
 </summary>
 <div className="border-t border-ink-tint p-5">
 <p className="text-[15.5px] leading-relaxed text-charcoal">
-Book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC is based in Ahmedabad, Gujarat, and typically responds within 24 hours on business days.
+To meet or speak with SBC in Ahmedabad, book the free business systems audit at sbcgroup.in/book-free-audit, call +91 8128310116 or email consulting@sbcgroup.in. SBC typically responds within 24 hours on business days.
 </p>
 </div>
 </details>
