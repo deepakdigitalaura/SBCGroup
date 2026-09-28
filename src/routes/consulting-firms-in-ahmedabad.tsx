@@ -8,8 +8,8 @@ import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 import { JsonLd } from "@/components/sbc/JsonLd";
 
-const title = "Management Consulting Firms in Ahmedabad: Compare, Choose | SBC";
-const description = "Comparing management consulting firms in Ahmedabad? See how to choose, what results to expect and how SBC works. Book your free business systems audit today.";
+const title = "Management Consulting Firms in Ahmedabad: How to Choose | SBC";
+const description = "Comparing management consulting firms in Ahmedabad? See how to choose, what results to expect and how SBC works. Book your free business systems audit.";
 const robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const url = "https://sbcgroup.in/consulting-firms-in-ahmedabad";
 
@@ -91,8 +91,8 @@ const webPageSchema = {
   "@type": "WebPage",
   "@id": "https://sbcgroup.in/consulting-firms-in-ahmedabad#webpage",
   "url": "https://sbcgroup.in/consulting-firms-in-ahmedabad",
-  "name": "Management Consulting Firms in Ahmedabad: Compare, Choose | SBC",
-  "description": "Comparing management consulting firms in Ahmedabad? See how to choose, what results to expect and how SBC works. Book your free business systems audit today.",
+  "name": "Management Consulting Firms in Ahmedabad: How to Choose | SBC",
+  "description": "Comparing management consulting firms in Ahmedabad? See how to choose, what results to expect and how SBC works. Book your free business systems audit.",
   "inLanguage": "en-IN",
   "isPartOf": {
     "@type": "WebSite",
@@ -108,7 +108,7 @@ const webPageSchema = {
     "url": "https://sbcgroup.in/images/founder/sagar-burse-founder-sbc-ahmedabad.webp"
   },
   "datePublished": "2026-09-21",
-  "dateModified": "2026-09-23",
+  "dateModified": "2026-09-28",
   "author": {
     "@type": "Person",
     "name": "Sagar Burse",
@@ -268,8 +268,8 @@ This guide explains what management consulting firms do, how to compare the top 
 Sagar Burse, PhD
 </a>
 {", Founder & Principal Consultant · Last updated "}
-<time dateTime="2026-09-23">
-23 September 2026
+<time dateTime="2026-09-28">
+28 September 2026
 </time>
 </p>
 <div className="mt-6 flex flex-wrap gap-3">
@@ -725,6 +725,17 @@ SBC’s four practice divisions cover the most common reasons organisations hire
 <PracticeAreaCard icon={Landmark} title="Policy Advisory" description="Policy research, regulatory frameworks and evidence-based advisory for government bodies and industry associations." href="/policy-advisory" />
 </Reveal>
 </div>
+<p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
+{"Looking for a focused national service? SBC also runs specialist engagements in "}
+<a href="/business-growth-consulting" className="font-semibold text-gold-deep transition-colors hover:text-gold">
+business growth consulting
+</a>
+{" and "}
+<a href="/business-process-improvement" className="font-semibold text-gold-deep transition-colors hover:text-gold">
+business process improvement consulting
+</a>
+{", both built on the same GAP360™ method."}
+</p>
 </div>
 </section>
 <section className="section-y border-b border-ink-tint bg-ink-wash">

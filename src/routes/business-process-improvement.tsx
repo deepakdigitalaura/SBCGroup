@@ -36,9 +36,9 @@ import { PracticeAreaCard } from "@/components/sbc/PracticeAreaCard";
 import { Breadcrumbs } from "@/components/sbc/Breadcrumbs";
 import { JsonLd } from "@/components/sbc/JsonLd";
 
-const title = "Business Process Improvement Consultant: The Complete Guide | SBC";
+const title = "Business Process Improvement Consultant: Complete Guide | SBC";
 const description =
-  "See how SBC, a business process improvement consultant, maps workflows, fixes SOPs and cuts turnaround time for MSMEs across India. Book a free audit today.";
+  "See how SBC, a business process improvement consultant, maps workflows, fixes SOPs and cuts turnaround time for MSMEs across India. Book a free audit.";
 const robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const url = "https://sbcgroup.in/business-process-improvement";
 
@@ -116,9 +116,9 @@ const webPageSchema = {
   "@type": "WebPage",
   "@id": "https://sbcgroup.in/business-process-improvement#webpage",
   url: "https://sbcgroup.in/business-process-improvement",
-  name: "Business Process Improvement Consultant: The Complete Guide | SBC",
+  name: "Business Process Improvement Consultant: Complete Guide | SBC",
   description:
-    "See how SBC, a business process improvement consultant, maps workflows, fixes SOPs and cuts turnaround time for MSMEs across India. Book a free audit today.",
+    "See how SBC, a business process improvement consultant, maps workflows, fixes SOPs and cuts turnaround time for MSMEs across India. Book a free audit.",
   inLanguage: "en-IN",
   isPartOf: {
     "@type": "WebSite",
@@ -895,6 +895,23 @@ function BusinessProcessImprovement() {
                 />
               </Reveal>
             </div>
+            <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
+              {"Process fixes stick best when they are tied to a growth plan. See our guide to "}
+              <a
+                href="/business-growth-consulting"
+                className="font-semibold text-gold-deep transition-colors hover:text-gold"
+              >
+                business growth consulting services
+              </a>
+              {". Based in Ahmedabad and comparing local options? Read how to choose among "}
+              <a
+                href="/consulting-firms-in-ahmedabad"
+                className="font-semibold text-gold-deep transition-colors hover:text-gold"
+              >
+                management consulting firms in Ahmedabad
+              </a>
+              {"."}
+            </p>
           </div>
         </section>
         <section className="section-y border-b border-ink-tint bg-ink-wash">
