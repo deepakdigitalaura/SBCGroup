@@ -127,6 +127,30 @@ function AboutSBC() {
                   Strategic Research and Policy — serving MSME founders, institutional leaders and
                   government bodies across India.
                 </p>
+                <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
+                  {"Our business work is built around "}
+                  <a
+                    href="/business-growth-consulting"
+                    className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                  >
+                    business growth consulting
+                  </a>
+                  {" and "}
+                  <a
+                    href="/business-process-improvement"
+                    className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                  >
+                    business process improvement
+                  </a>
+                  {", and organisations comparing local options can see how to choose among "}
+                  <a
+                    href="/consulting-firms-in-ahmedabad"
+                    className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                  >
+                    management consulting firms in Ahmedabad
+                  </a>
+                  {"."}
+                </p>
               </div>
             </Reveal>
           </div>

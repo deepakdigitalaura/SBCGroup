@@ -119,6 +119,23 @@ function OurApproach() {
                 project-based consulting. This is a partnership built on accountability, integrity
                 and outcomes.
               </p>
+              <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
+                {"See how this approach works in practice in our guides to "}
+                <a
+                  href="/business-growth-consulting"
+                  className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                >
+                  business growth consulting
+                </a>
+                {" and "}
+                <a
+                  href="/business-process-improvement"
+                  className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                >
+                  business process improvement consulting
+                </a>
+                {"."}
+              </p>
             </Reveal>
             <div className="mt-10 grid gap-5 sm:grid-cols-2">
               <Reveal as="section" className="border border-ink-tint bg-paper p-5">

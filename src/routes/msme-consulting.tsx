@@ -248,6 +248,30 @@ function MsmeConsulting() {
                 <PracticeAreaCard key={s.title} icon={s.icon} title={s.title} description={s.description} />
               ))}
             </Reveal>
+            <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-charcoal">
+              {"Looking for a specific outcome? Read our detailed guides to "}
+              <a
+                href="/business-growth-consulting"
+                className="font-semibold text-gold-deep transition-colors hover:text-gold"
+              >
+                business growth consulting
+              </a>
+              {" and "}
+              <a
+                href="/business-process-improvement"
+                className="font-semibold text-gold-deep transition-colors hover:text-gold"
+              >
+                business process improvement consulting
+              </a>
+              {", or see how to choose among "}
+              <a
+                href="/consulting-firms-in-ahmedabad"
+                className="font-semibold text-gold-deep transition-colors hover:text-gold"
+              >
+                management consulting firms in Ahmedabad
+              </a>
+              {"."}
+            </p>
           </div>
         </section>
 
