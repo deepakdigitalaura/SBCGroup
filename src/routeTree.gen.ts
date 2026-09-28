@@ -31,6 +31,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as BlogBusinessGrowthSystemsFirstApproachRouteImport } from './routes/blog.business-growth-systems-first-approach'
 import { Route as BlogManagementConsultantHiringChecklistAhmedabadRouteImport } from './routes/blog.management-consultant-hiring-checklist-ahmedabad'
+import { Route as BlogWhatIsBusinessProcessImprovementRouteImport } from './routes/blog.what-is-business-process-improvement'
 import { Route as CaseStudiesIndexRouteImport } from './routes/case-studies.index'
 import { Route as CaseStudiesSlugRouteImport } from './routes/case-studies.$slug'
 
@@ -151,6 +152,12 @@ const BlogManagementConsultantHiringChecklistAhmedabadRoute =
     path: '/management-consultant-hiring-checklist-ahmedabad',
     getParentRoute: () => BlogRoute,
   } as any)
+const BlogWhatIsBusinessProcessImprovementRoute =
+  BlogWhatIsBusinessProcessImprovementRouteImport.update({
+    id: '/what-is-business-process-improvement',
+    path: '/what-is-business-process-improvement',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const CaseStudiesIndexRoute = CaseStudiesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -184,6 +191,7 @@ export interface FileRoutesByFullPath {
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
+  '/blog/what-is-business-process-improvement': typeof BlogWhatIsBusinessProcessImprovementRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -208,6 +216,7 @@ export interface FileRoutesByTo {
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
+  '/blog/what-is-business-process-improvement': typeof BlogWhatIsBusinessProcessImprovementRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog': typeof BlogIndexRoute
   '/case-studies': typeof CaseStudiesIndexRoute
@@ -235,6 +244,7 @@ export interface FileRoutesById {
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
+  '/blog/what-is-business-process-improvement': typeof BlogWhatIsBusinessProcessImprovementRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -263,6 +273,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
+    | '/blog/what-is-business-process-improvement'
     | '/case-studies/$slug'
     | '/blog/'
     | '/case-studies/'
@@ -287,6 +298,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
+    | '/blog/what-is-business-process-improvement'
     | '/case-studies/$slug'
     | '/blog'
     | '/case-studies'
@@ -313,6 +325,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
+    | '/blog/what-is-business-process-improvement'
     | '/case-studies/$slug'
     | '/blog/'
     | '/case-studies/'
@@ -495,6 +508,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogManagementConsultantHiringChecklistAhmedabadRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/what-is-business-process-improvement': {
+      id: '/blog/what-is-business-process-improvement'
+      path: '/what-is-business-process-improvement'
+      fullPath: '/blog/what-is-business-process-improvement'
+      preLoaderRoute: typeof BlogWhatIsBusinessProcessImprovementRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/case-studies/': {
       id: '/case-studies/'
       path: '/'
@@ -516,6 +536,7 @@ interface BlogRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
   BlogBusinessGrowthSystemsFirstApproachRoute: typeof BlogBusinessGrowthSystemsFirstApproachRoute
   BlogManagementConsultantHiringChecklistAhmedabadRoute: typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
+  BlogWhatIsBusinessProcessImprovementRoute: typeof BlogWhatIsBusinessProcessImprovementRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
@@ -525,6 +546,8 @@ const BlogRouteChildren: BlogRouteChildren = {
     BlogBusinessGrowthSystemsFirstApproachRoute,
   BlogManagementConsultantHiringChecklistAhmedabadRoute:
     BlogManagementConsultantHiringChecklistAhmedabadRoute,
+  BlogWhatIsBusinessProcessImprovementRoute:
+    BlogWhatIsBusinessProcessImprovementRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
 

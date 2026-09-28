@@ -44,6 +44,17 @@ type ListingPost = Pick<BlogPost, "title" | "excerpt" | "author" | "date" | "cat
 
 const externalPosts: ListingPost[] = [
   {
+    slug: "what-is-business-process-improvement",
+    href: "/blog/what-is-business-process-improvement",
+    title: "What Is Business Process Improvement? A Founder's Plain-English Guide",
+    excerpt:
+      "What business process improvement is, the 7 steps, the methods worth using, real examples and 8 quick wins to improve your business processes, explained for MSME founders.",
+    author: "Dr. Sagar Burse",
+    date: "2026-09-28",
+    category: "MSME Growth",
+    readMinutes: 11,
+  },
+  {
     slug: "business-growth-systems-first-approach",
     href: "/blog/business-growth-systems-first-approach",
     title: "Business Growth Consulting: A Systems-First Approach to Business Growth Systems",
