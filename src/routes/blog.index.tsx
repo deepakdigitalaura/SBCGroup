@@ -44,6 +44,17 @@ type ListingPost = Pick<BlogPost, "title" | "excerpt" | "author" | "date" | "cat
 
 const externalPosts: ListingPost[] = [
   {
+    slug: "business-growth-systems-first-approach",
+    href: "/blog/business-growth-systems-first-approach",
+    title: "Business Growth Consulting: A Systems-First Approach to Business Growth Systems",
+    excerpt:
+      "What business growth systems are, why a systems-first approach beats strategy-first growth, the 7 bottlenecks that stall MSMEs and a 30-day plan to start fixing them.",
+    author: "Dr. Sagar Burse",
+    date: "2026-09-28",
+    category: "MSME Growth",
+    readMinutes: 10,
+  },
+  {
     slug: "management-consultant-hiring-checklist-ahmedabad",
     href: "/blog/management-consultant-hiring-checklist-ahmedabad",
     title: "Management Consultant Hiring Checklist: What to Check Before You Hire in Ahmedabad",

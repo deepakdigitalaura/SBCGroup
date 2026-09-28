@@ -29,6 +29,7 @@ import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as StrategicResearchFeasibilityRouteImport } from './routes/strategic-research-feasibility'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as BlogBusinessGrowthSystemsFirstApproachRouteImport } from './routes/blog.business-growth-systems-first-approach'
 import { Route as BlogManagementConsultantHiringChecklistAhmedabadRouteImport } from './routes/blog.management-consultant-hiring-checklist-ahmedabad'
 import { Route as CaseStudiesIndexRouteImport } from './routes/case-studies.index'
 import { Route as CaseStudiesSlugRouteImport } from './routes/case-studies.$slug'
@@ -138,6 +139,12 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const BlogBusinessGrowthSystemsFirstApproachRoute =
+  BlogBusinessGrowthSystemsFirstApproachRouteImport.update({
+    id: '/business-growth-systems-first-approach',
+    path: '/business-growth-systems-first-approach',
+    getParentRoute: () => BlogRoute,
+  } as any)
 const BlogManagementConsultantHiringChecklistAhmedabadRoute =
   BlogManagementConsultantHiringChecklistAhmedabadRouteImport.update({
     id: '/management-consultant-hiring-checklist-ahmedabad',
@@ -175,6 +182,7 @@ export interface FileRoutesByFullPath {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -198,6 +206,7 @@ export interface FileRoutesByTo {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog': typeof BlogIndexRoute
@@ -224,6 +233,7 @@ export interface FileRoutesById {
   '/resources': typeof ResourcesRoute
   '/strategic-research-feasibility': typeof StrategicResearchFeasibilityRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/business-growth-systems-first-approach': typeof BlogBusinessGrowthSystemsFirstApproachRoute
   '/blog/management-consultant-hiring-checklist-ahmedabad': typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -251,6 +261,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog/'
@@ -274,6 +285,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog'
@@ -299,6 +311,7 @@ export interface FileRouteTypes {
     | '/resources'
     | '/strategic-research-feasibility'
     | '/blog/$slug'
+    | '/blog/business-growth-systems-first-approach'
     | '/blog/management-consultant-hiring-checklist-ahmedabad'
     | '/case-studies/$slug'
     | '/blog/'
@@ -468,6 +481,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/business-growth-systems-first-approach': {
+      id: '/blog/business-growth-systems-first-approach'
+      path: '/business-growth-systems-first-approach'
+      fullPath: '/blog/business-growth-systems-first-approach'
+      preLoaderRoute: typeof BlogBusinessGrowthSystemsFirstApproachRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/management-consultant-hiring-checklist-ahmedabad': {
       id: '/blog/management-consultant-hiring-checklist-ahmedabad'
       path: '/management-consultant-hiring-checklist-ahmedabad'
@@ -494,12 +514,15 @@ declare module '@tanstack/react-router' {
 
 interface BlogRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
+  BlogBusinessGrowthSystemsFirstApproachRoute: typeof BlogBusinessGrowthSystemsFirstApproachRoute
   BlogManagementConsultantHiringChecklistAhmedabadRoute: typeof BlogManagementConsultantHiringChecklistAhmedabadRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
 const BlogRouteChildren: BlogRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
+  BlogBusinessGrowthSystemsFirstApproachRoute:
+    BlogBusinessGrowthSystemsFirstApproachRoute,
   BlogManagementConsultantHiringChecklistAhmedabadRoute:
     BlogManagementConsultantHiringChecklistAhmedabadRoute,
   BlogIndexRoute: BlogIndexRoute,

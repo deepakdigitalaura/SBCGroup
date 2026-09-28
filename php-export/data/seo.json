@@ -4,8 +4,16 @@
   "meta_description": "",
   "pages": [],
   "redirects": [
-    { "from": "/our-expertise", "to": "/msme-consulting", "type": 301 },
-    { "from": "/case-studies/wift-formwork-institute", "to": "/case-studies/winntus-institute-formwork-technology", "type": 301 }
+    {
+      "from": "/our-expertise",
+      "to": "/msme-consulting",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/wift-formwork-institute",
+      "to": "/case-studies/winntus-institute-formwork-technology",
+      "type": 301
+    }
   ],
-  "head_tags": ""
+  "head_tags": "<!-- Google Tag Manager -->\r\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-K7434TZ4');</script>\r\n<!-- End Google Tag Manager -->"
 }
