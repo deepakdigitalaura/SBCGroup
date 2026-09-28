@@ -651,6 +651,18 @@ function BusinessGrowthConsulting() {
                   </a>
                   {" explains why growth plans without implementation rarely work."}
                 </p>
+                <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
+                  {
+                    "For a practical, step-by-step view of how growth actually gets built — the systems, the bottlenecks to fix first and a 30-day starting plan — read our guide to "
+                  }
+                  <a
+                    href="/blog/business-growth-systems-first-approach"
+                    className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                  >
+                    business growth systems and the systems-first approach
+                  </a>
+                  {"."}
+                </p>
               </div>
             </Reveal>
           </div>
