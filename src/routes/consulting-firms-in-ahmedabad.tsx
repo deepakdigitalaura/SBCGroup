@@ -108,7 +108,7 @@ const webPageSchema = {
     "url": "https://sbcgroup.in/images/founder/sagar-burse-founder-sbc-ahmedabad.webp"
   },
   "datePublished": "2026-09-21",
-  "dateModified": "2026-09-21",
+  "dateModified": "2026-09-23",
   "author": {
     "@type": "Person",
     "name": "Sagar Burse",
@@ -268,8 +268,8 @@ This guide explains what management consulting firms do, how to compare the top 
 Sagar Burse, PhD
 </a>
 {", Founder & Principal Consultant · Last updated "}
-<time dateTime="2026-09-21">
-21 September 2026
+<time dateTime="2026-09-23">
+23 September 2026
 </time>
 </p>
 <div className="mt-6 flex flex-wrap gap-3">
