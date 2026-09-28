@@ -662,6 +662,18 @@ function BusinessProcessImprovement() {
                   </a>
                   {" explains why process fixes without implementation rarely last."}
                 </p>
+                <p className="mt-4 text-[17px] leading-relaxed text-charcoal">
+                  {"New to the topic? Our plain-English guide to "}
+                  <a
+                    href="/blog/what-is-business-process-improvement"
+                    className="font-semibold text-gold-deep transition-colors hover:text-gold"
+                  >
+                    what is business process improvement
+                  </a>
+                  {
+                    " covers the steps, the methods worth using and practical examples for founder-led businesses."
+                  }
+                </p>
               </div>
             </Reveal>
           </div>
