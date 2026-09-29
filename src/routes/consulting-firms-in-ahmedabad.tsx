@@ -1021,7 +1021,7 @@ Promoters evaluating a new venture before investing
 </section>
 <section className="section-y border-b border-ink-tint">
 <div className="shell">
-<div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-center">
+<div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-center lg:items-start">
 <Reveal as="section" className="order-1">
 <div className="max-w-sm border-2 border-gold p-3 shadow-[12px_12px_0_0_var(--ink)]">
 <img src="/images/founder/sagar-burse-founder-sbc-ahmedabad.webp" alt="Sagar Burse, PhD, Founder and Principal Consultant of Sagar Burse Consulting (SBC), a management consulting firm in Ahmedabad" width={768} height={768} loading="lazy" decoding="async" className="aspect-[4/5] w-full object-cover" />

@@ -1216,7 +1216,7 @@ function BusinessGrowthConsulting() {
         </section>
         <section className="section-y border-b border-ink-tint">
           <div className="shell">
-            <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-center">
+            <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-center lg:items-start">
               <Reveal as="section" className="order-1">
                 <div className="max-w-sm border-2 border-gold p-3 shadow-[12px_12px_0_0_var(--ink)]">
                   <img
@@ -1283,23 +1283,23 @@ function BusinessGrowthConsulting() {
                     LinkedIn →
                   </a>
                 </div>
-                <Reveal
-                  as="section"
-                  className="mt-10 flex flex-col gap-4 border border-gold bg-gold-wash p-6 sm:flex-row sm:items-center cta-row"
-                >
-                  <p className="font-display text-lg font-semibold leading-snug text-ink">
-                    Talk to the founder directly. The first 45 minutes are free.
-                  </p>
-                  <a
-                    href="/book-free-audit"
-                    className="inline-flex items-center gap-2 bg-gold px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint shrink-0 justify-center"
-                  >
-                    Book Your Free Audit
-                    <ArrowRight className="size-4" />
-                  </a>
-                </Reveal>
               </Reveal>
             </div>
+            <Reveal
+              as="section"
+              className="mt-10 flex flex-col gap-4 border border-gold bg-gold-wash p-6 sm:flex-row sm:items-center cta-row"
+            >
+              <p className="font-display text-lg font-semibold leading-snug text-ink">
+                Talk to the founder directly. The first 45 minutes are free.
+              </p>
+              <a
+                href="/book-free-audit"
+                className="inline-flex items-center gap-2 bg-gold px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:bg-gold-tint shrink-0 justify-center"
+              >
+                Book Your Free Audit
+                <ArrowRight className="size-4" />
+              </a>
+            </Reveal>
           </div>
         </section>
         <section className="section-y border-b border-ink-tint bg-ink-wash">
