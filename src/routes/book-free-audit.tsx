@@ -17,6 +17,10 @@ const labelClass = "font-medium text-[12px] uppercase tracking-[0.14em] text-ink
 const inputClass =
   "mt-2 w-full border border-ink-tint bg-paper px-4 py-3 text-[16px] text-ink focus:border-gold focus:outline-none";
 
+// Bottom-aligns each stat's label so a 2-line value (e.g. "Dr. Sagar Burse") doesn't
+// push its label out of line with the other single-line stats in the row.
+const statColStyle = { display: "flex", flexDirection: "column", justifyContent: "flex-end" } as const;
+
 const steps = [
   {
     title: "Understanding Your Business",
@@ -114,12 +118,17 @@ function BookFreeAudit() {
               </p>
             </Reveal>
 
-            <style>{`#audit-stats>div{display:flex;flex-direction:column;justify-content:flex-end}#audit-stats>div:nth-child(4) p:first-child{white-space:nowrap;font-size:1.4rem}`}</style>
-            <div id="audit-stats" className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-6 border-y border-ink-tint py-8 sm:grid-cols-4">
-              <StatBlock value="45 Min" label="Duration" dark />
-              <StatBlock value="Free" label="Cost" dark />
-              <StatBlock value="24 Hrs" label="Response Time" dark />
-              <StatBlock value="Dr. Sagar Burse" label="Facilitator" dark />
+            <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-6 border-y border-ink-tint py-8 sm:grid-cols-4">
+              <StatBlock value="45 Min" label="Duration" dark style={statColStyle} />
+              <StatBlock value="Free" label="Cost" dark style={statColStyle} />
+              <StatBlock value="24 Hrs" label="Response Time" dark style={statColStyle} />
+              <StatBlock
+                value="Dr. Sagar Burse"
+                label="Facilitator"
+                dark
+                style={statColStyle}
+                valueStyle={{ whiteSpace: "nowrap", fontSize: "1.4rem" }}
+              />
             </div>
           </div>
         </section>

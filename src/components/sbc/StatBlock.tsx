@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 const NUMBER_RE = /\d[\d,]*/;
 
@@ -27,7 +27,19 @@ function useCountUp(value: string, active: boolean) {
   return display;
 }
 
-export function StatBlock({ value, label, dark }: { value: string; label: string; dark?: boolean }) {
+export function StatBlock({
+  value,
+  label,
+  dark,
+  style,
+  valueStyle,
+}: {
+  value: string;
+  label: string;
+  dark?: boolean;
+  style?: CSSProperties;
+  valueStyle?: CSSProperties;
+}) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState(false);
 
@@ -52,9 +64,10 @@ export function StatBlock({ value, label, dark }: { value: string; label: string
   const display = useCountUp(value, active);
 
   return (
-    <div ref={ref} className="min-w-0">
+    <div ref={ref} className="min-w-0" style={style}>
       <p
         className={`text-2xl font-semibold tracking-tight md:text-3xl ${dark ? "text-paper" : "text-ink"}`}
+        style={valueStyle}
       >
         {display}
       </p>
