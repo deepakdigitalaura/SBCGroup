@@ -114,7 +114,8 @@ function BookFreeAudit() {
               </p>
             </Reveal>
 
-            <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-6 border-y border-ink-tint py-8 sm:grid-cols-4">
+            <style>{`#audit-stats>div{display:flex;flex-direction:column;justify-content:flex-end}`}</style>
+            <div id="audit-stats" className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-6 border-y border-ink-tint py-8 sm:grid-cols-4">
               <StatBlock value="45 Min" label="Duration" dark />
               <StatBlock value="Free" label="Cost" dark />
               <StatBlock value="24 Hrs" label="Response Time" dark />
