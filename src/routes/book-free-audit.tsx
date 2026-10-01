@@ -127,7 +127,7 @@ function BookFreeAudit() {
                 label="Facilitator"
                 dark
                 style={statColStyle}
-                valueStyle={{ whiteSpace: "nowrap", fontSize: "1.4rem" }}
+                valueStyle={{ fontSize: "1.4rem" }}
               />
             </div>
           </div>
