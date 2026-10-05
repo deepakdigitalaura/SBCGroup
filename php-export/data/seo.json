@@ -2,7 +2,36 @@
   "site_url": "https://sbcgroup.in",
   "title_suffix": "",
   "meta_description": "",
-  "pages": [],
+  "pages": {
+    "/": {
+      "title": "Sagar Burse Consulting | Institution & Business Advisory, Ahmedabad",
+      "description": "Founder-led advisory in Gujarat: institution set-up and affiliation, feasibility studies and research, and business operations for growing companies."
+    },
+    "/institution-building-skill-development": {
+      "title": "Institution & Skill Centre Setup Consultant, Gujarat | SBC",
+      "description": "Advisory for new colleges, universities and skill centres in Gujarat: roadmap, AICTE/UGC/NSDC affiliation support, curriculum and governance."
+    },
+    "/strategic-research-feasibility": {
+      "title": "Feasibility Study & Market Research, Ahmedabad | SBC",
+      "description": "Feasibility studies, market research and sector studies for promoters, trusts and businesses in Gujarat, with a clear go / no-go recommendation."
+    },
+    "/msme-consulting": {
+      "title": "Business Operations Consultant for MSMEs, Gujarat | SBC",
+      "description": "Organisation design, roles, KPIs, performance systems and process readiness for founder-led businesses in Gujarat."
+    },
+    "/case-studies": {
+      "title": "Case Studies | Sagar Burse Consulting",
+      "description": "SBC engagements in institution building, research and business operations, plus the founder's prior experience."
+    },
+    "/about-sbc": {
+      "title": "About Dr. Sagar Burse | Sagar Burse Consulting",
+      "description": "Dr. Sagar Burse, MBA and PhD in Management, founded SBC in Ahmedabad in May 2025 to advise institutions and founder-led businesses."
+    },
+    "/contact": {
+      "title": "Contact | Sagar Burse Consulting, Ahmedabad",
+      "description": "Discuss your project directly with Dr. Sagar Burse. Institution set-up, research and business operations advisory in Gujarat."
+    }
+  },
   "redirects": [
     {
       "from": "/our-expertise",
@@ -12,6 +41,16 @@
     {
       "from": "/case-studies/wift-formwork-institute",
       "to": "/case-studies/winntus-institute-formwork-technology",
+      "type": 301
+    },
+    {
+      "from": "/policy-advisory",
+      "to": "/strategic-research-feasibility",
+      "type": 301
+    },
+    {
+      "from": "/gap360",
+      "to": "/msme-consulting",
       "type": 301
     }
   ],
