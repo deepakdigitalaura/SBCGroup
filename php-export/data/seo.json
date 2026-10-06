@@ -20,8 +20,8 @@
       "description": "Organisation design, roles, KPIs, performance systems and process readiness for founder-led businesses in Gujarat."
     },
     "/case-studies": {
-      "title": "Case Studies | Sagar Burse Consulting",
-      "description": "SBC engagements in institution building, research and business operations, plus the founder's prior experience."
+      "title": "Case Studies | Strategic Business Consultant & MSME Results | SBC",
+      "description": "Real SBC case studies across strategic research & feasibility and business operations (MSME) consulting — plus Dr. Sagar Burse's prior institutional work. Client identities withheld for confidentiality."
     },
     "/about-sbc": {
       "title": "About Dr. Sagar Burse | Sagar Burse Consulting",
@@ -40,7 +40,7 @@
     },
     {
       "from": "/case-studies/wift-formwork-institute",
-      "to": "/case-studies/winntus-institute-formwork-technology",
+      "to": "/case-studies",
       "type": 301
     },
     {
@@ -51,6 +51,36 @@
     {
       "from": "/gap360",
       "to": "/msme-consulting",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/rubber-plastics-manufacturer",
+      "to": "/case-studies",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/industrial-components-manufacturer",
+      "to": "/case-studies",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/trading-distribution-business",
+      "to": "/case-studies",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/winntus-institute-formwork-technology",
+      "to": "/case-studies",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/finance-operations-services-venture",
+      "to": "/case-studies",
+      "type": 301
+    },
+    {
+      "from": "/case-studies/specialty-cafe-green-coffee-venture",
+      "to": "/case-studies",
       "type": 301
     }
   ],

@@ -1,11 +1,5 @@
 RewriteEngine On
 
-# TEMPORARY: case-studies section offline (2026-09-30).
-# Reversible — delete this block (and case-studies-down.php) to restore.
-RewriteRule ^case-studies(/.*)?$ case-studies-down.php [L]
-RewriteCond %{REQUEST_URI} !^/case-studies-down\.php$
-RewriteRule ^case-studies(-[^/]*)?\.php$ case-studies-down.php [L]
-
 # /blog/some-slug -> blog-some-slug.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
